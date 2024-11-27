@@ -1,5 +1,5 @@
 import React from 'react'
-import Clientsection from '../clients/clientsection'
+import Clientsection from '../components/clients/clientsection'
 
 const Clients = () => {
     return (
