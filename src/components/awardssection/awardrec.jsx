@@ -40,7 +40,7 @@ const Ourworkapge = () => {
     const isSelected = (category) => selectedCategory === category;
 
     return (
-        <div className="pt-[105px] data_cla">
+        <div className="py-[105px] data_cla">
             <div className="w-full mx-auto">
                 <div className="gallery-container">
                     {/* Filter Buttons */}
@@ -60,11 +60,11 @@ const Ourworkapge = () => {
                     </div>
 
                     {/* Displaying Filtered Images */}
-                    <div className="flex w-full lg:w-[1600px] mx-auto flex-wrap gallery-images">
+                    <div className="flex w-full lg:w-[1440px] mx-auto flex-wrap gallery-images">
                         {filterImages(selectedCategory).map((data) => (
                             <div
                                 key={data.id}
-                                className="image-item w-full md:w-[33.33%] flex justify-center mb-[25px] text-[20px] space-x-3"
+                                className="image-item w-full text-center md:w-[33.33%] flex justify-center mb-[25px] text-[20px] space-x-3"
                             >
                                 <span>{data.id}</span> <i className="bi bi-x-lg"></i>
                                 <span className="font-bold">{data.text}</span>

@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const links = [
@@ -17,12 +17,34 @@ const links = [
 const Header = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const location = useLocation();
-
+    const [headerStyle, setHeaderStyle] = useState({
+        height: '122px',
+        boxShadow: "0px 4px 2px -2px gray",
+    });
     const toggleMenu = () => {
         setIsExpanded((prev) => !prev);
         console.log("Menu is now", !isExpanded ? "expanded" : "collapsed");
     };
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setHeaderStyle({
+                    height: "100px",
+                    boxShadow: "0px 4px 2px -2px gray",
+                });
+            } else {
+                setHeaderStyle({
+                    height: "122px",
+                    boxShadow: "0px 4px 2px -2px gray",
+                });
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
 
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -32,8 +54,8 @@ const Header = () => {
 
     return (
         <header className="bg-white header data_cla">
-            <nav className="fixed top-0 z-50 w-full mx-auto overflow-hidden bg-white">
-                <div className="container flex flex-col items-center justify-between p-4 mx-auto md:flex-row">
+            <nav className="fixed top-0 z-50 w-full mx-auto overflow-hidden bg-white shadow-b-xl">
+                <div style={{ ...headerStyle }} className="container flex flex-col h-[122px] items-center justify-between p-4 mx-auto md:flex-row  ">
                     <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">
                             <img src="https://socialpanga.com/wp-content/uploads/2021/07/SocialPanga-Logo.svg" className="w-[220px]" alt="Company Logo" />
@@ -52,7 +74,7 @@ const Header = () => {
                                     <Link
                                         to={item.path}
                                         onClick={() => { scrollToTop(); setIsExpanded(false); }}
-                                        className={`flex items-center justify-center p-2 font-medium uppercase ${location.pathname === item.path ? "text-black font-extrabold" : "text-black"
+                                        className={`flex items-center justify-center text-[16px] p-2 font-medium uppercase ${location.pathname === item.path ? "text-black font-extrabold" : "text-black"
                                             } group-hover:font-extrabold flex flex-col `}
                                     >
                                         <img
@@ -81,13 +103,13 @@ const Header = () => {
                                     >
                                         <img
                                             src={item.src}
-                                            className={`w-[50px] h-[50px] md:w-[80px] ${location.pathname === item.path ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                                            className={`w-[50px] h-[50px]  md:w-[80px] ${location.pathname === item.path ? "opacity-100" : "opacity-0 group-hover:opacity-100"
                                                 }`}
                                             alt={`Icon for ${item.pagename}`}
                                         />
                                         <span
                                             className={`uppercase ${location.pathname === item.path ? "font-extrabold" : "font-medium"
-                                                } group-hover:font-extrabold`}
+                                                } group-hover:font-extrabold text-[16px] `}
                                         >
                                             {item.pagename}
                                         </span>

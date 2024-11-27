@@ -11,6 +11,7 @@ import Ourservices from './components/services/ourservices';
 import Ourwork from './pages/ourwork';
 import Awards from './pages/awards';
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Clients from './pages/clients';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/services' element={<Ourservices />} />
           <Route path='/ourwork' element={<Ourwork />} />
           <Route path='/awards' element={<Awards />} />
+          <Route path='/clients' element={<Clients />} />
         </Routes>
         <Footer />
       </Router>
