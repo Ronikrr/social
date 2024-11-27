@@ -1,13 +1,13 @@
 import React from 'react'
 import Awardssection from '../components/awardssection/awardssection'
 import Maintitle from '../components/maintitle'
-// import Awardsilder from '../components/awardsection/awardsilder'
+import Slider from '../components/awardssection/slider'
 const Awards = () => {
     Maintitle('Social panga - awards')
     return (
         <div className='pt-[60px] md:pt-[100px]' >
             <Awardssection />
-            {/* <Awardsilder /> */}
+            <Slider />
         </div>
     )
 }
