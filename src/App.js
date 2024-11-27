@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Ourservices from './components/services/ourservices';
 import Ourwork from './pages/ourwork';
 import Awards from './pages/awards';
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 function App() {
   return (
     <>
