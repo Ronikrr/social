@@ -83,17 +83,19 @@ const SliderComponent = () => {
     return (
         <div className="container py-10 mx-auto">
             <Slider {...settings}>
-                <div className="p-4">
-                    <img src={slider_image_01} alt="Slide 1" className="w-full h-auto rounded-lg" />
-                </div>
-                <div className="p-4">
-                    <img src={slider_image_01} alt="Slide 2" className="w-full h-auto rounded-lg" />
-                </div>
-                <div className="p-4">
-                    <img src={slider_image_01} alt="Slide 3" className="w-full h-auto rounded-lg" />
-                </div>
-                <div className="p-4">
-                    <img src={slider_image_01} alt="Slide 4" className="w-full h-auto rounded-lg" />
+                <div className="flex flex-wrap w-full">
+                    <div className="w-full">
+                        <img src={slider_image_01} alt="Slide 1" className="w-full h-auto rounded-lg" />
+                    </div>
+                    <div className="w-full">
+                        <img src={slider_image_01} alt="Slide 2" className="w-full h-auto rounded-lg" />
+                    </div>
+                    <div className="w-full">
+                        <img src={slider_image_01} alt="Slide 3" className="w-full h-auto rounded-lg" />
+                    </div>
+                    <div className="w-full">
+                        <img src={slider_image_01} alt="Slide 4" className="w-full h-auto rounded-lg" />
+                    </div>
                 </div>
             </Slider>
         </div>
