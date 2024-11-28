@@ -3,7 +3,7 @@ import Ourworkapge from '../components/ourworkpage/ourworkapge'
 
 const Ourwork = () => {
     return (
-        <div>
+        <div className='data_cla' >
             <Ourworkapge />
         </div>
     )

@@ -6,7 +6,7 @@ import Awardrec from '../components/awardssection/awardrec'
 const Awards = () => {
     Maintitle('Social panga - awards')
     return (
-        <div className='pt-[60px] md:pt-[100px]' >
+        <div className='pt-[60px] data_cla md:pt-[100px]' >
             <Awardssection />
             <Slider />
             <Awardrec />

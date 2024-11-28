@@ -3,7 +3,7 @@ import Ourservices from '../components/services/ourservices'
 
 const Servicepage = () => {
     return (
-        <div  >
+        <div className='data_cla' >
             <Ourservices />
         </div>
     )

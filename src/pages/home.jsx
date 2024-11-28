@@ -5,7 +5,7 @@ import Localsection from '../components/localsection/localsection'
 import Slider_box from '../components/slider_box/slider_box'
 const Home = () => {
   return (
-    <div>
+    <div className='data_cla' >
       <Banner />
       <Sliderdata />
       <Localsection />

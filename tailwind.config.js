@@ -17,6 +17,10 @@ module.exports = {
       
         'top-xl': '0 -10px 15px rgba(0, 0, 0, 0.3)',
       },
+      rotate: {
+        '-4': '-4deg',
+        '-7': '-7deg',
+      },
     },
   },
   plugins: [],
