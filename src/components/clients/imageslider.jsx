@@ -47,59 +47,208 @@
 
 // export default Slider;
 
+// import React from 'react';
+// import Slider from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+
+// import slider_image_01 from '../../assets/img/clients/new/1.jpg'
+// import slider_image_02 from '../../assets/img/clients/new/2.jpg'
+// import slider_image_03 from '../../assets/img/clients/new/3.png'
+// import slider_image_04 from '../../assets/img/clients/new/4.png'
+// import slider_image_05 from '../../assets/img/clients/new/5.jpg'
+// import slider_image_06 from '../../assets/img/clients/new/6.png'
+// import slider_image_07 from '../../assets/img/clients/new/7.png'
+// import slider_image_08 from '../../assets/img/clients/new/8.png'
+// import slider_image_09 from '../../assets/img/clients/new/9.png'
+// import slider_image_010 from '../../assets/img/clients/new/10.png'
+// import { Link } from 'react-router-dom';
+// console.log(slider_image_01)
+// // Slick settings
+// const slide_datas = [
+//     {
+//         id: 1,
+//         src: slider_image_01,
+//     }, {
+//         id: 2,
+//         src: slider_image_02,
+//     }, {
+//         id: 3,
+//         src: slider_image_03,
+//     }, {
+//         id: 4,
+//         src: slider_image_04,
+//     }, {
+//         id: 5,
+//         src: slider_image_05,
+//     }, {
+//         id: 6,
+//         src: slider_image_06,
+//     }, {
+//         id: 7,
+//         src: slider_image_07,
+//     }, {
+//         id: 8,
+//         src: slider_image_08,
+//     }, {
+//         id: 9,
+//         src: slider_image_09,
+//     }, {
+//         id: 10,
+//         src: slider_image_010,
+//     },
+// ]
+// const settings = {
+//     margin: 10,
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 4,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     responsive: [
+//         {
+//             breakpoint: 640,
+//             settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//             },
+//         },
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//             },
+//         },
+//         {
+//             breakpoint: 1024,
+//             settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             },
+//         },
+//         {
+//             breakpoint: 1280,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//             },
+//         },
+//         {
+//             breakpoint: 1536,
+//             settings: {
+//                 slidesToShow: 4,
+//                 slidesToScroll: 1,
+//             },
+//         },
+//     ],
+// };
+
+// const SliderComponent = () => {
+//     return (
+//         <div className='relative' >
+//             <section className="relative py-24 overflow-x-hidden categury ">
+
+//                 {/* <div className="container mx-auto "> */}
+//                 <div className="z-10 flex flex-col w-full space-y-10 text-sm text-center small_head ">
+//                     <span className='text-xl uppercase md:text-[25px] font-semibold text-[#4f282b]' >Shop by Category</span>
+//                     <div className="main_head">
+//                         <span className='text-5xl text-[#4f282b] capitalize prociono-regular md:text-[80px] font-semibold ' >Makeup & Skin Care</span>
+//                     </div>
+//                 </div>
+//                 <div className="flex items-center w-full my-[50px]">
+//                     <Slider className='w-full owl-theme' {...settings}>
+//                         {slide_datas.map((data, id) => {
+//                             console.log(data.src)
+//                             return (
+//                                 <div className="w-full h-full item" key={id} >
+//                                     <div className="flex items-center ">
+//                                         <div className="w-[400px] rounded-full flex items-center   justify-center h-[400px] bg-[#FCEADE] ">
+//                                             <img src={data.src} alt="img_1" />
+//                                         </div>
+
+//                                     </div>
+//                                 </div>
+//                             )
+//                         }
+//                         )}
+//                         {/* <div className="w-full h-full item"  >
+//                             <div className="flex items-center ">
+//                                 <div className="w-[400px] rounded-full flex items-center   justify-center h-[400px] bg-[#FCEADE] ">
+//                                     <img src={slider_image_01} alt="img_1" />
+//                                 </div>
+
+//                             </div>
+//                         </div> */}
+
+//                     </Slider>
+//                 </div>
+
+//                 {/* </div> */}
+//             </section>
+
+//         </div>
+//     );
+// };
+
+// export default SliderComponent;
 import React from 'react';
-import Slider from 'react-slick';
-import slider_image_01 from '../../assets/img/clients/Icons-13 (1).jpg'
-// Slick settings
-const settings = {
-    infinite: false,
-    slidesToShow: 3,  // Number of slides to display at once
-    slidesToScroll: 1, // Number of slides to scroll at a time
-    arrows: false,      // Display arrows
-    dots: false,        // Display dots
-    autoplay: true,    // Enable autoplay
-    autoplaySpeed: 2000, // Speed of autoplay
-    responsive: [
-        {
-            breakpoint: 1024, // Adjust settings for screens less than 1024px
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                arrows: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600, // Adjust settings for screens less than 600px
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-};
+import slider_image_01 from '../../assets/img/clients/new/1.jpg';
+import slider_image_02 from '../../assets/img/clients/new/2.jpg';
+import slider_image_03 from '../../assets/img/clients/new/3.png';
+import slider_image_04 from '../../assets/img/clients/new/4.png';
+import slider_image_05 from '../../assets/img/clients/new/5.jpg';
+import slider_image_06 from '../../assets/img/clients/new/6.png';
+import slider_image_07 from '../../assets/img/clients/new/7.png';
+import slider_image_08 from '../../assets/img/clients/new/8.png';
+import slider_image_09 from '../../assets/img/clients/new/9.png';
+import slider_image_010 from '../../assets/img/clients/new/10.png';
+
+const slide_datas = [
+    { id: 1, src: slider_image_01 },
+    { id: 2, src: slider_image_02 },
+    { id: 3, src: slider_image_03 },
+    { id: 4, src: slider_image_04 },
+    { id: 5, src: slider_image_05 },
+    { id: 6, src: slider_image_06 },
+    { id: 7, src: slider_image_07 },
+    { id: 8, src: slider_image_08 },
+    { id: 9, src: slider_image_09 },
+    { id: 10, src: slider_image_010 },
+];
 
 const SliderComponent = () => {
     return (
-        <div className="container py-10 mx-auto">
-            <Slider {...settings}>
-                <div className="flex flex-wrap w-full">
-                    <div className="w-full">
-                        <img src={slider_image_01} alt="Slide 1" className="w-full h-auto rounded-lg" />
+        <div className="relative py-[50px]  bg-[#cfcfcf] ">
+            {/* Heading */}
+            <div className="mb-8 text-center">
+
+                <h1 className="text-4xl pb-[1rem] mb-[0.5rem] md:text-[60px] font-extrabold capitalize">
+                    Makeup & Skin Care
+                </h1>
+            </div>
+
+            {/* Slider */}
+            <div className="flex px-4 space-x-6 overflow-x-hidden slider-container scrollbar-hide">
+                {slide_datas.map((data) => (
+                    <div
+                        key={data.id}
+                        className="flex items-center justify-center flex-shrink-0 w-48 h-48 md:w-96 md:h-96"
+                    >
+                        <img
+                            src={data.src}
+                            alt={`slide-${data.id}`}
+                            className="object-contain w-36 h-36 md:w-80 md:h-80"
+                        />
                     </div>
-                    <div className="w-full">
-                        <img src={slider_image_01} alt="Slide 2" className="w-full h-auto rounded-lg" />
-                    </div>
-                    <div className="w-full">
-                        <img src={slider_image_01} alt="Slide 3" className="w-full h-auto rounded-lg" />
-                    </div>
-                    <div className="w-full">
-                        <img src={slider_image_01} alt="Slide 4" className="w-full h-auto rounded-lg" />
-                    </div>
-                </div>
-            </Slider>
+                ))}
+            </div>
         </div>
     );
 };
 
 export default SliderComponent;
+
+
