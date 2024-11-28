@@ -17,6 +17,17 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
   }
+  .list_in a:not(.active) {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #cd121c;
+}
+.active {
+  color: #fff; /* Red text */
+ 
+}
+
 }
 
 @layer components {
@@ -83,6 +94,7 @@
   .data_cla{
      font-family: "Montserrat", sans-serif;
   }
+  
   #slider-section .slick-prev:before,
   .slick-next:before {
     @apply text-black;
