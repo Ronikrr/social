@@ -2,7 +2,9 @@ import React from 'react'
 
 const Carrer_slider = () => {
     return (
-        <div>Carrer_slider</div>
+        <div className='bg-[#e1bb08] py-[3rem]' >
+            .contain
+        </div>
     )
 }
 

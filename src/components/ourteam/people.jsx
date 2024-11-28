@@ -54,10 +54,10 @@ const People = () => {
             {/* <div className="container mx-auto"> */}
 
             {/* </div> */}
-            <div className="flex items-center flex-wrap mx-auto px-[3rem] w-full md:w-[1200px] min-h-screen ">
+            <div className="flex items-center flex-wrap mx-auto px-[0px] md:px-[3rem] w-full md:w-[1200px] min-h-screen ">
                 {onwr.map((item, id) => {
                     return (
-                        <div className="w-4/12 px-[15px] pb-[1rem] bg-white" key={id} >
+                        <div className="w-full md:w-4/12 px-[15px] pb-[1rem] bg-white" key={id} >
                             {/* Profile Image Section */}
                             <div className="w-full ownrwe_img">
                                 <img
@@ -93,44 +93,6 @@ const People = () => {
                         </div>
                     )
                 })}
-                <div className="w-4/12 px-[15px] pb-[1rem] bg-white">
-                    {/* Profile Image Section */}
-                    <div className="w-full ownrwe_img">
-                        <img
-                            src="https://socialpanga.com/wp-content/uploads/2020/12/Himanshu-A-1.jpg"
-                            className="w-full"
-                            alt=""
-                        />
-                    </div>
-
-                    {/* Content Section */}
-                    <div className="pt-[1rem] text-left ">
-                        <h1 className="text-xl font-bold">Himanshu Arora</h1>
-                        <p className="mb-4 text-gray-500">Co-Founder</p>
-                        <p className="text-sm font-semibold">
-                            <span className="text-gray-800">Blood Group:</span> Selling,
-                            Customer Delight, Entrepreneurship, Old Bollywood Songs, Cycling,
-                            and Talking.
-                        </p>
-                        <p className="mt-2 text-sm font-semibold">
-                            <span className="text-gray-800">Weapons:</span> Phone, Client
-                            Emails, Sense of Humour, Killer Beard, Bollywood Movie Situations,
-                            etc.
-                        </p>
-                    </div>
-
-                    {/* Next Button */}
-                    <div className="py-4 text-center">
-                        <button className="relative w-full font-bold text-blue-500 text-[24px]">
-                            next
-                            <img
-                                src={image_bg}
-                                className="h-[53px] top-[-25%] absolute w-full"
-                                alt=""
-                            />
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     );

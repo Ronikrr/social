@@ -13,7 +13,7 @@ import Awards from './pages/awards';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Clients from './pages/clients';
 import Team from './pages/team';
-import Carrer from './pages/carrer';
+import Career from './pages/career';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
           <Route path='/awards' element={<Awards />} />
           <Route path='/clients' element={<Clients />} />
           <Route path='/team' element={<Team />} />
-          <Route path='/carrer' element={<Carrer />} />
+          <Route path='/career' element={<Career />} />
         </Routes>
         <Footer />
       </Router>
