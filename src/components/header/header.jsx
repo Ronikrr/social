@@ -55,7 +55,7 @@ const Header = () => {
     return (
         <header className="bg-white header data_cla">
             <nav className="fixed top-0 z-50 w-full mx-auto overflow-hidden bg-white shadow-b-xl">
-                <div style={{ ...headerStyle }} className="container flex flex-col h-[122px] items-center justify-between p-4 mx-auto md:flex-row  ">
+                <div className="container flex-col items-center justify-between p-4 mx-auto moblie_size md:flex-row ">
                     <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">
                             <img src="https://socialpanga.com/wp-content/uploads/2021/07/SocialPanga-Logo.svg" className="w-[220px]" alt="Company Logo" />
@@ -90,7 +90,13 @@ const Header = () => {
 
                         </ul>
                     </div>
-                    {/* Desktop Menu */}
+                </div>
+                <div style={{ ...headerStyle }} className="container wishlist_  flex-col md:h-[122px] items-center justify-between p-4 mx-auto md:flex-row  ">
+                    {/* Desktop Menu */} <div className="flex items-center justify-between w-full md:w-4/12">
+                        <Link className="text-lg font-semibold" to="/">
+                            <img src="https://socialpanga.com/wp-content/uploads/2021/07/SocialPanga-Logo.svg" className="w-[220px]" alt="Company Logo" />
+                        </Link>
+                    </div>
                     <div className="items-center w-auto space-x-6 text-gray-700 wishlist_">
                         <ul className="flex flex-row space-x-6">
                             {links.map((item) => (

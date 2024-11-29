@@ -3,8 +3,9 @@ import Carrerslider from '../components/carrepage/carrer_slider'
 
 const Carrer = () => {
     return (
-        <div className='py-[122px]' >
+        <div className='py-[60px] md:py-[122px]' >
             <Carrerslider />
+
         </div>
     )
 }

@@ -23,8 +23,18 @@
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #cd121c;
 }
-.active {
+.active  {
   color: #fff; /* Red text */
+
+}
+.active::after  {
+  position: absolute;
+  content: "";
+  right: -34px;
+  top:50%;
+  transform: translateY(-50%);
+  border:.2em solid transparent;
+  border-right-color: #fff;
  
 }
 
@@ -148,7 +158,7 @@
       transition-delay: 0.2s;
     }
   }
-  @media (max-width: 1280px) {
+  @media (min-width: 1280px) {
     .slick-track,
     .slick-slider {
       @apply w-full !important;
