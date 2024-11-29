@@ -47,10 +47,10 @@ const Modal = ({ isOpen, onClose, job }) => {
                     </ul>
                 </div>
 
-                <button onClick={onClose} className="px-4 py-2 mt-4 text-white bg-red-500 rounded">
-                    Close
-                </button>
             </div>
+            <button onClick={onClose} className="absolute top-[125px] right-[25%] px-4 py-2 mt-4 text-white bg-red-500 rounded">
+                *
+            </button>
         </div>
     );
 };
