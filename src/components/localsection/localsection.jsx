@@ -11,8 +11,8 @@ const Localsection = () => {
             <img src={bg_img} className='w-full' alt="" />
 
             <div className="container flex justify-center mx-auto ">
-                <div className="pt-[18px] pb-[54px] px-0 flex flex-wrap w-full lg:w-[1140px]">
-                    <Link to='' className="w-full p-3 md:w-4/12">
+                <div className="pt-[18px] md:pb-[54px] px-0 flex flex-wrap w-full lg:w-[1140px]">
+                    <Link to='' className="w-full p-3 h-[550px] md:w-4/12">
                         <div className="bg-[#c32126] rounded-tl-[50px] ">
                             <div className="relative h-[500px] mb-[50%] pb-[1rem] px-[1.5rem] pt-[3rem] items-end justify-end flex-nowrap flex flex-col-reverse">
                                 <div className="absolute right-[-90px] top-[-5%] left-[50%] h-[75%] md:right-[-50%] text-left mb-[60%] box_absolute ">
@@ -27,7 +27,7 @@ const Localsection = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link to='' className="w-full p-3 md:w-4/12">
+                    <Link to='' className="w-full p-3 h-[550px] md:w-4/12">
                         <div className="bg-[#0573b6] rounded-tl-[50px] ">
                             <div className="relative h-[500px] mb-[50%] pb-[1rem] px-[1.5rem] pt-[3rem] items-end justify-end flex-nowrap flex flex-col-reverse">
                                 <div className="absolute right-[-90px] top-[-5%] left-[50%] h-[75%] md:right-[-50%] text-left mb-[60%] box_absolute ">
@@ -42,7 +42,7 @@ const Localsection = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link to='' className="w-full p-3 md:w-4/12">
+                    <Link to='' className="w-full h-[550px] p-3 md:w-4/12">
                         <div className="bg-[#5f2a7c] rounded-tl-[50px] ">
                             <div className="relative h-[500px] mb-[50%] pb-[1rem] px-[1.5rem] pt-[3rem] items-end justify-end flex-nowrap flex flex-col-reverse">
                                 <div className="absolute right-[-90px] top-[-5%] left-[50%] h-[75%] md:right-[-50%] text-left mb-[60%] box_absolute ">
