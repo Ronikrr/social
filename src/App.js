@@ -14,6 +14,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Clients from './pages/clients';
 import Team from './pages/team';
 import Career from './pages/career';
+import Contact from './pages/contact';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/clients' element={<Clients />} />
           <Route path='/team' element={<Team />} />
           <Route path='/career' element={<Career />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
       </Router>
