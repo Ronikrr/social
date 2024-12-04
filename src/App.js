@@ -16,6 +16,9 @@ import Team from './pages/team';
 import Career from './pages/career';
 import Worksupage from './components/sliderdata/worksupage';
 import Contact from './pages/contact';
+// import Flickity from "flickity";
+import "flickity/dist/flickity.min.css";
+
 
 function App() {
   return (

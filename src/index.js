@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
+// import Flickity from "flickity";
+import "flickity/dist/flickity.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

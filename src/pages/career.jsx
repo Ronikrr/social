@@ -1,8 +1,9 @@
 import React from 'react'
 import Carrerslider from '../components/carrepage/carrer_slider'
 import Position from '../components/carrepage/position'
-
+import Maintitle from '../components/maintitle'
 const Carrer = () => {
+    Maintitle("Social Panga - Career Page")
     return (
         <div className='py-[60px] md:py-[122px]' >
             <Carrerslider />

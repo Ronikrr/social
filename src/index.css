@@ -5,6 +5,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:wght@100;300;400;700;900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prociono&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
 @layer utilities {
+  .flickity-viewport{
+    height: 100% !important ;
+  }
+  .site,.about-us_page,.intro-sec,.row{
+    height: 100%;
+  }
   .text-stroke:not(.active) {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

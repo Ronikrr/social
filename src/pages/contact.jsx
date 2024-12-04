@@ -1,21 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Maintitle from '../components/maintitle'
 const Contact = () => {
+    Maintitle('Social Panga - Contact Page')
     return (
         <div className='py-[60px] md:py-[125px] relative data_cla ' >
-            {/* <div className="w-full h-full md:absolute">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.840447495227!2d72.86865777540311!3d21.234272480467006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fbe056894ef%3A0x7bfc941e108f23a5!2sIT%20Park!5e1!3m2!1sen!2sin!4v1732956586227!5m2!1sen!2sin"
 
-                    style={{ border: 0 }}
-                    className='w-full h-full'
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Google Map"
-                ></iframe>
-            </div> */}
 
             <div className="relative px-[15px] w-full py md:py-[8rem] ">
                 {/* <div className="container mx-auto "> */}
