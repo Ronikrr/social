@@ -14,6 +14,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Clients from './pages/clients';
 import Team from './pages/team';
 import Career from './pages/career';
+import Worksupage from './components/sliderdata/worksupage';
 import Contact from './pages/contact';
 
 function App() {
@@ -27,11 +28,13 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Ourservices />} />
           <Route path='/ourwork' element={<Ourwork />} />
+          <Route path='/ourwork/:slidetext' element={<Worksupage />} />
           <Route path='/awards' element={<Awards />} />
           <Route path='/clients' element={<Clients />} />
           <Route path='/team' element={<Team />} />
           <Route path='/career' element={<Career />} />
           <Route path='/contact' element={<Contact />} />
+
         </Routes>
         <Footer />
       </Router>

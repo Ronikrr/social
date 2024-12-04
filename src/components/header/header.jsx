@@ -19,7 +19,7 @@ const Header = () => {
     const location = useLocation();
     const [headerStyle, setHeaderStyle] = useState({
         height: '122px',
-        boxShadow: "0px 4px 2px -2px gray",
+        // boxShadow: "0px 4px 4px -2px gray",
     });
     const toggleMenu = () => {
         setIsExpanded((prev) => !prev);
@@ -30,12 +30,12 @@ const Header = () => {
             if (window.scrollY > 300) {
                 setHeaderStyle({
                     height: "100px",
-                    boxShadow: "0px 4px 2px -2px gray",
+                    // boxShadow: "0px 4px 2px -2px gray",
                 });
             } else {
                 setHeaderStyle({
                     height: "122px",
-                    boxShadow: "0px 4px 2px -2px gray",
+                    // boxShadow: "0px 4px 2px -2px gray",
                 });
             }
         };
@@ -54,7 +54,7 @@ const Header = () => {
 
     return (
         <header className="bg-white header data_cla">
-            <nav className="fixed top-0 z-50 w-full mx-auto overflow-hidden bg-white shadow-b-xl">
+            <nav className="fixed top-0 z-50 w-full mx-auto overflow-hidden bg-white shadow-lg ">
                 <div className="container flex-col items-center justify-between p-4 mx-auto moblie_size md:flex-row ">
                     <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">
