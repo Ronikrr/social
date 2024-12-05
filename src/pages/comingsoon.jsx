@@ -1,59 +1,60 @@
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
+// You can skip the external CSS since we're using Tailwind now.
 
 const ComingSoon = () => {
-    return (
-        <div className="flex items-center w-screen h-screen ">
-            <header>
-                <section className="flex flex-col items-center hero-banner">
+    const [timeLeft, setTimeLeft] = useState({});
 
-                    <div
-                        className="hero-image bg-cover bg-center h-[376px] w-full"
-                        style={{
-                            backgroundImage: "url('https://assets.codepen.io/6060109/athlete-girl.png')",
-                        }}
-                    ></div>
-                </section>
-            </header>
-            <main>
-                <article className="flex flex-col items-center w-full px-10 text-center text-info">
-                    <h2 className="pb-4 font-normal text-red-600 pt-7">We're</h2>
-                    <h2 className="text-5xl font-bold tracking-wide uppercase text-brown-600">
-                        Coming
-                        <br />
-                        Soon
-                    </h2>
-                    <p className="leading-6 text-black">
-                        Hello friends! We are currently building our new sports and comfort
-                        clothing store. Add your email address below to stay up-to-date with
-                        announcements and our launch proposals.
-                    </p>
-                    <section className="relative w-full my-4 mb-24 email-signup">
-                        <form>
-                            <input
-                                className="w-full px-6 py-4 border rounded-md opacity-50 email-input border-black/70 focus:outline-2 focus:outline-black focus:opacity-100"
-                                type="email"
-                                required
-                                placeholder="Email Address"
-                                name="email-address"
-                            />
-                            <input
-                                className="absolute z-10 px-6 py-4 font-bold text-white bg-black rounded-md cursor-pointer email-submit right-10"
-                                value="Go"
-                                type="submit"
-                                text="Go"
-                                for="email-address"
-                            />
-                        </form>
-                    </section>
-                </article>
-            </main>
-            <div className="hero-image-desktop  lg:block w-[55vw] h-full">
-                <img
-                    src="https://assets.codepen.io/6060109/athlete-big.png"
-                    alt="Female athlete squinting towards the camera"
-                    className="object-cover w-full h-full clip-path-[polygon(0_0,_100%_0,_100%_100%,_30%_100%)]"
-                />
+    // Set the target date for the countdown
+    const targetDate = new Date("2024-12-31T23:59:59");
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const now = new Date();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+            } else {
+                setTimeLeft({
+                    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                    minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                    seconds: Math.floor((distance % (1000 * 60)) / 1000),
+                });
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="flex flex-col items-center justify-center w-screen h-screen text-gray-900 bg-gray-100">
+            <h1 className="mb-8 text-4xl font-bold text-center">Coming Soon!</h1>
+
+            <div className="flex gap-8">
+                <div className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
+                    <span className="text-3xl font-bold">{timeLeft.days || '00'}</span>
+                    <p className="mt-2 text-sm">Days</p>
+                </div>
+                <div className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
+                    <span className="text-3xl font-bold">{timeLeft.hours || '00'}</span>
+                    <p className="mt-2 text-sm">Hours</p>
+                </div>
+                <div className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
+                    <span className="text-3xl font-bold">{timeLeft.minutes || '00'}</span>
+                    <p className="mt-2 text-sm">Minutes</p>
+                </div>
+                <div className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
+                    <span className="text-3xl font-bold">{timeLeft.seconds || '00'}</span>
+                    <p className="mt-2 text-sm">Seconds</p>
+                </div>
             </div>
+
+            <p className="mt-10 text-lg text-center text-gray-600">
+                We're working hard to get this site ready for you. Stay tuned!
+            </p>
         </div>
     );
 };
