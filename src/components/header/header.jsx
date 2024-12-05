@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../../assets/img/logo/Asset 1@4x.png'
 
 const links = [
     { id: 1, src: "https://www.t3bucket.com/f/0-man1.svg", pagename: "home", path: '/' },
@@ -58,7 +59,7 @@ const Header = () => {
                 <div className="container flex-col items-center justify-between p-4 mx-auto moblie_size md:flex-row ">
                     <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">
-                            <img src="https://socialpanga.com/wp-content/uploads/2021/07/SocialPanga-Logo.svg" className="w-[220px]" alt="Company Logo" />
+                            <img src={logo} className="w-[220px]" alt="Company Logo" />
                         </Link>
                         <button className="text-gray-700 focus:outline-none md:hidden" aria-label="Toggle navigation" onClick={toggleMenu}>
                             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -94,7 +95,7 @@ const Header = () => {
                 <div style={{ ...headerStyle }} className="container wishlist_  flex-col md:h-[122px] items-center justify-between p-4 mx-auto md:flex-row  ">
                     {/* Desktop Menu */} <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">
-                            <img src="https://socialpanga.com/wp-content/uploads/2021/07/SocialPanga-Logo.svg" className="w-[220px]" alt="Company Logo" />
+                            <img src={logo} className="w-[220px]" alt="Company Logo" />
                         </Link>
                     </div>
                     <div className="items-center w-auto space-x-6 text-gray-700 wishlist_">
