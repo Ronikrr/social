@@ -60,3 +60,109 @@ const ComingSoon = () => {
 };
 
 export default ComingSoon;
+
+// import React from "react";
+
+// const ComingSoon = () => {
+//     return (
+//         <div
+//             style={{
+//                 backgroundColor: "#f8f9fa",
+//                 color: "#333",
+//                 textAlign: "center",
+//                 height: "100vh",
+//                 overflow: "hidden",
+//                 position: "relative",
+//                 fontFamily: "'Poppins', sans-serif",
+//             }}
+//         >
+//             {/* Animated Cartoon Elements */}
+//             <div
+//                 style={{
+//                     position: "absolute",
+//                     top: "20%",
+//                     left: "10%",
+//                     animation: "float 3s ease-in-out infinite",
+//                 }}
+//             >
+//                 <img
+//                     src="https://cdn.pixabay.com/photo/2021/06/22/12/39/robot-6355446_960_720.png"
+//                     alt="cartoon1"
+//                     style={{ width: "150px" }}
+//                 />
+//             </div>
+//             <div
+//                 style={{
+//                     position: "absolute",
+//                     bottom: "10%",
+//                     right: "15%",
+//                     animation: "float 4s ease-in-out infinite",
+//                 }}
+//             >
+//                 <img
+//                     src="https://cdn.pixabay.com/photo/2021/04/04/09/32/robot-6147705_960_720.png"
+//                     alt="cartoon2"
+//                     style={{ width: "150px" }}
+//                 />
+//             </div>
+
+//             {/* Main Text */}
+//             <div
+//                 style={{
+//                     position: "relative",
+//                     zIndex: 1,
+//                     top: "50%",
+//                     transform: "translateY(-50%)",
+//                 }}
+//             >
+//                 <h1
+//                     style={{
+//                         fontSize: "3.5rem",
+//                         marginBottom: "20px",
+//                         animation: "fadeIn 2s ease-in-out",
+//                     }}
+//                 >
+//                     Bade Bazar Ke Digital
+//                 </h1>
+//                 <p
+//                     style={{
+//                         fontSize: "1.2rem",
+//                         marginBottom: "30px",
+//                         animation: "fadeIn 3.5s ease-in-out",
+//                     }}
+//                 >
+//                     Turning your marketing ideas into reality! 🚀
+//                 </p>
+//                 <div
+//                     style={{
+//                         width: "100px",
+//                         height: "100px",
+//                         border: "10px solid #ccc",
+//                         borderTop: "10px solid #ff5733",
+//                         borderRadius: "50%",
+//                         animation: "spin 1s linear infinite",
+//                         margin: "0 auto",
+//                     }}
+//                 ></div>
+//             </div>
+
+//             {/* Floating Animations */}
+//             <style>{`
+//         @keyframes fadeIn {
+//           from { opacity: 0; transform: translateY(20px); }
+//           to { opacity: 1; transform: translateY(0); }
+//         }
+//         @keyframes float {
+//           0%, 100% { transform: translateY(0); }
+//           50% { transform: translateY(-15px); }
+//         }
+//         @keyframes spin {
+//           0% { transform: rotate(0deg); }
+//           100% { transform: rotate(360deg); }
+//         }
+//       `}</style>
+//         </div>
+//     );
+// };
+
+// export default ComingSoon;
