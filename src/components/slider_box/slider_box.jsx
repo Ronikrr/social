@@ -163,7 +163,7 @@ const Slider_box = () => {
 
     return (
         <section id="slider-section " className="h-full relative md:pt-[100px] ">
-            <div className="absolute imges_calss -z-10 w-[95%] lg:w-[100%] xl:w-[95%] top-[-15%] md:top-[15%] lg:top-[50%] left-[3%]  lg:left-[50%]  h-full cratives ">
+            <div className="absolute imges_calss -z-10 w-[95%] lg:w-[100%] xl:w-[95%] 2xl:w-[95%] top-[-15%] md:top-[15%] 2xl:top-[55%] xl:top-[60%] xl:left-[50%] lg:top-[5%] left-[3%]  lg:left-[0%]  h-full cratives ">
                         <img src={Award_2} className="bg_box" alt="Award Background 2" />
                         <img src={Award_1} className="bg_box_thow" alt="Award Background 1" />
                     </div>

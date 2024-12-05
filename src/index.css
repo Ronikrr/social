@@ -173,8 +173,17 @@
     }
   }
   @media (min-width: 1201px) and (max-width: 1535px) {
+    .imges_calss {
+      @apply top-[5%]
+    }
     .wishlist_ {
       @apply flex;
+    }
+    .bg_box{
+      @apply block
+    }
+    .bg_box_thow{
+      @apply hidden
     }
     .moblie_size {
       @apply hidden;
