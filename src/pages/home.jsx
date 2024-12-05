@@ -4,6 +4,7 @@ import Sliderdata from '../components/sliderdata/sliderdata'
 import Localsection from '../components/localsection/localsection'
 import Sliderbox from '../components/slider_box/slider_box'
 import Maintitle from '../components/maintitle'
+
 const Home = () => {
   Maintitle("Social Panga - Home")
   return (
