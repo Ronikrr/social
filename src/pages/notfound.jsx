@@ -9,9 +9,9 @@ const NotFound = () => {
     return (
         <section className="flex items-center justify-center w-screen h-screen page_404 arvo-regular ">
             <div className="container h-full mx-auto ">
-                <div className="rowh-full ">
+                <div className="h-full row ">
                     <div className="w-full h-full ">
-                        <div className="w-10/12 h-full mx-auto text-center mt-[50px]">
+                        <div className="w-full lg:w-10/12 h-full mx-auto text-center mt-[50px]">
                             <h1 className="text-center text-[90px] ">404</h1>
                             <div className="four_zero_four_bg">
                             </div>
