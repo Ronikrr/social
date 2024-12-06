@@ -6,7 +6,7 @@ import Sliderbox from '../components/slider_box/slider_box'
 import Maintitle from '../components/maintitle'
 
 const Home = () => {
-  Maintitle("Social Panga - Home")
+  Maintitle("BadeBazarkaDigital - Home")
   return (
     <div className='data_cla' >
       <Banner />

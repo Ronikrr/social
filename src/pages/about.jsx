@@ -4,7 +4,7 @@ import Connect from '../components/aboutpage/connect'
 import Delight from '../components/aboutpage/delight'
 import Maintitle from '../components/maintitle'
 const About = () => {
-  Maintitle('Social Panga - About Us')
+  Maintitle('BadeBazarkaDigital - About Us')
   return (
     <div className='pt-[100px] data_cla data_cla' >
       <Banner />

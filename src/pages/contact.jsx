@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Maintitle from '../components/maintitle'
 const Contact = () => {
-    Maintitle('Social Panga - Contact Page')
+    Maintitle('BadeBazarkaDigital - Contact Page')
     return (
         <div className='py-[60px] md:py-[125px] relative data_cla ' >
 
