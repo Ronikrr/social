@@ -8,7 +8,7 @@ import Maintitle from '../components/maintitle'
 const Home = () => {
   Maintitle("BadeBazarkaDigital - Home")
   return (
-    <div className='data_cla' >
+    <div className='data_cla z-9999' >
       <Banner />
       <Sliderdata />
       <Localsection />

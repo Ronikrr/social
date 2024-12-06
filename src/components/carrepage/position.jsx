@@ -225,7 +225,7 @@ const Ourworkapge = () => {
                                         <span className="text-[24px] leading-[1.2] font-extrabold " >•</span>
                                         {images.department}
                                     </p>
-                                    <Link onClick={() => handleApplyClick(images)} className="relative w-[67%] items-center  sm:w-[210px] sm:absolute   sm:right-[20px] text-[15px] sm:text-[20px] z-10 font-extrabold bg-[#e1bb08] py-[10px] px-[30px] leading-none rounded-[25px] sm:top-[20px] flex  hover:bg-[#f8d200]  " >
+                                    <Link onClick={() => handleApplyClick(images)} className="relative w-[67%] items-center  sm:w-[210px] sm:absolute   sm:right-[20px] text-[15px] sm:text-[20px]  font-extrabold bg-[#e1bb08] py-[10px] px-[30px] leading-none rounded-[25px] sm:top-[20px] flex  hover:bg-[#f8d200]  " >
                                         Apply now
                                         <img className="w-[25px] ml-2 h-[25px]" src="https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/arrow-right.svg" alt="" />
                                     </Link>

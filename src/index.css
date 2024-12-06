@@ -114,6 +114,149 @@ input {
         width: auto;
     }
 
+
+
+/* ---------- TEXT INFO DECLERATIONS ---------- */
+.text-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+    .text-info > * {
+        padding: 0 2.5rem 1rem;
+    }
+
+    /* intended for the first h2 within .text-info */
+    .text-info h2:nth-child(1) {
+        color: var(--theme-color-red);
+        font-weight: normal;
+        padding-top: 1.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .text-info h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--theme-color-brown);
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .text-info p {
+        color: var(--theme-color-black);
+        line-height: 24px;
+    }
+
+    .text-info .email-signup {
+        margin: 1rem 0 6rem;
+        position: relative;
+        width: 100%;
+    }
+    
+        .email-signup .email-input {
+            border: 1px solid rgba(51, 51, 51, .7);
+            border-radius: 3px;
+            padding: 1rem 1.5rem;
+            opacity: .5;
+            width: 100%;
+        }
+
+        .email-signup .email-input:focus {
+            background-color: var(--theme-color-white);
+            outline: 2px solid var(--theme-color-black);
+            opacity: 1;
+        }
+
+        .email-signup .email-submit {
+            background-color: var(--theme-color-black);
+            border-bottom: 1px solid var(--theme-color-black);
+            border-radius: 2px;
+            color: var(--theme-color-white);
+            cursor: pointer;
+            font-weight: bold;
+            opacity: 1;
+            padding: 1rem 1.5rem;
+            position: absolute;
+            right: 0;
+            margin-right: 2.5rem;
+            z-index: 10;
+        }
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 3.5rem;
+    }
+
+    .mobile-container {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero-banner .logo-wrapper {
+        margin-left: 3.5rem;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+        .logo-wrapper img {
+            margin: 0 0 0;
+            padding-left: 2.5rem;
+        }
+
+    .hero-image {
+        display: none;
+    }
+
+    .text-info {
+        text-align: left;
+        align-items: start;
+    }
+    
+        .text-info h2 {
+            font-size: 4.5rem;
+        }
+
+        .text-info p {
+            font-size: 16px;
+        }
+
+        .text-info input {
+            font-size: 16px;
+        }
+  
+        .text-info .email-signup {
+            margin: 1rem 0 7rem;
+        }
+
+    .hero-image-desktop {
+        display: block;
+        height: 100%;
+        width: 55vw;
+    }
+
+    .hero-image-desktop img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+  
+    .email-signup .email-submit {
+        border-bottom: 2px solid var(--theme-color-black);
+    }
+}
   .flickity-viewport{
     height: 100% !important ;
   }

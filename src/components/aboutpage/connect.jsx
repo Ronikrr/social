@@ -406,9 +406,9 @@ const Connect = () => {
                                                             key={index}
                                                         >
                                                             <div
-                                                                className={`gallery-item_inn h-full ${item.type}`}
+                                                                className={`gallery-item_inn even:w-6/12 odd:w-full aspect-auto object-contain h-full ${item.type}`}
                                                                 style={{
-                                                                    background: `url(${item.imgUrl}) no-repeat center/cover`,
+                                                                    background: `url(${item.imgUrl}) no-repeat center/contain`,
                                                                 }}
                                                             >
                                                                 <div className="gallery-content-wrap">

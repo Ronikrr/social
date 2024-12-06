@@ -8,7 +8,7 @@ const Banner = () => {
     }
     return (
         <section className='bg-[#f8d200] pb-[200px] lg:pb-[400px] relative' >
-            <img src={img_1} className='absolute bottom-0 left-0 right-0 z-0 w-full' alt="" />
+            <img src={img_1} className='absolute bottom-0 left-0 right-0 w-full -z-0' alt="" />
             <div className="container mx-auto text-black">
                 <div className="relative z-10 py-[1.5rem]">
                     <div className="text-center page_title">
@@ -28,7 +28,7 @@ const Banner = () => {
                             <span className="font-semibold text-[18px] ">/ˈmæf.i.ə/</span>
                         </div>
                     </div>
-                    <div className="w-full mx-auto text-center md:w-10/12 lg:w-6/12">
+                    <div className="z-0 w-full mx-auto text-center md:w-10/12 lg:w-6/12">
                         <span className='font-semibold text-[18px]' >The quintessential villain who brings out the best in the hero and is the sole reason for his existence – the Joker to Batman, the Gabbar Singh to Thakur,<br /> the Darth Vader to Luke Skywalker. These are the guys and girls whose <br /> punchlines and schemes are remembered forever.</span>
                     </div>
                 </div>
