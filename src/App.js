@@ -31,11 +31,14 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Check the current pathname using window.location
-  const currentPath = window.location.pathname;
 
-  // List of routes where Header and Footer should not be shown
-  const noHeaderFooterRoutes = ['/', '/*'];
+  const Layout = ({ children }) => (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 
 // return loading ? (
 //   <Loader />
@@ -64,26 +67,25 @@ function App() {
   // );
   return (
     <Router>
-      {/* Conditionally render Header and Footer */}
-      {!noHeaderFooterRoutes.includes(currentPath) && <Header />}
+
+
 
       <Routes>
-        <Route path='/commingsoon' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Servicepage />} />
-        <Route path='/ourwork' element={<Ourwork />} />
-        <Route path='/ourwork/:slidetext' element={<Worksupage />} />
-        <Route path='/awards' element={<Awards />} />
-        <Route path='/clients' element={<Clients />} />
-        <Route path='/team' element={<Team />} />
-        <Route path='/career' element={<Career />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/commingsoon' element={<Layout><Home /></Layout>} />
+        <Route path='/about' element={<Layout><About /> </Layout>} />
+        <Route path='/services' element={<Layout><Servicepage /> </Layout>} />
+        <Route path='/ourwork' element={<Layout><Ourwork /> </Layout>} />
+        <Route path='/ourwork/:slidetext' element={<Layout><Worksupage /> </Layout>} />
+        <Route path='/awards' element={<Layout><Awards /> </Layout>} />
+        <Route path='/clients' element={<Layout><Clients /> </Layout>} />
+        <Route path='/team' element={<Layout><Team /> </Layout>} />
+        <Route path='/career' element={<Layout><Career /> </Layout>} />
+        <Route path='/contact' element={<Layout><Contact /> </Layout>} />
         <Route path='/' element={<Comingsoon />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
 
-      {/* Conditionally render Footer */}
-      {!noHeaderFooterRoutes.includes(currentPath) && <Footer />}
+
     </Router>
   );
 }
