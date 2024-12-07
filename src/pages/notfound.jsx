@@ -13,7 +13,7 @@ const NotFound = () => {
                     <div className="w-full h-full ">
                         <div className="w-full lg:w-10/12 h-full mx-auto text-center mt-[50px]">
                             <h1 className="text-center text-[90px] ">404</h1>
-                            <div className="four_zero_four_bg">
+                            <div className="four_zero_four_bg w-[70%] mx-auto ">
                             </div>
                             <div className="contant_box_404">
                                 <h3 className="h2">Look like you're lost</h3>
