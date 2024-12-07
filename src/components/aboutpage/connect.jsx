@@ -387,7 +387,7 @@ const Connect = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap">
+            {/* <div className="flex flex-wrap">
                 <div className="w-full px-0 pt-[3rem]">
                     <div className="w-full outline-none into_gallary">
                         <div className="h-[500px] w-full touch-auto overflow-x-hidden">
@@ -430,7 +430,7 @@ const Connect = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };
