@@ -1,21 +1,21 @@
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Award_2 from "../../assets/img/award-bg-new.svg";
 import Award_1 from "../../assets/img/award-bg-mob-new.svg";
 import Monkey_glass from "../../assets/img/award-monkey-glass.svg";
 import Monkey from "../../assets/img/monkys1.svg";
 
 import Award_imge1 from '../../assets/img/Awards-image1.png'
-import Award_imge2 from '../../assets/img/Awards-image2.png'
-import Award_imge3 from '../../assets/img/Awards-image3.png'
-import Award_imge4 from '../../assets/img/Awards-image4.png'
-import Award_imge5 from '../../assets/img/Awards-image5.png'
-import Award_imge6 from '../../assets/img/Awards-image6.png'
-import Award_imge7 from '../../assets/img/Awards-image7.png'
+// import Award_imge2 from '../../assets/img/Awards-image2.png'
+// import Award_imge3 from '../../assets/img/Awards-image3.png'
+// import Award_imge4 from '../../assets/img/Awards-image4.png'
+// import Award_imge5 from '../../assets/img/Awards-image5.png'
+// import Award_imge6 from '../../assets/img/Awards-image6.png'
+// import Award_imge7 from '../../assets/img/Awards-image7.png'
 import Award_imge8 from '../../assets/img/Awards-image8.png'
-import Award_imge9 from '../../assets/img/Awards-image9.png'
-import Award_imge10 from '../../assets/img/Awards-image10.png'
-import Award_imge11 from '../../assets/img/Awards-image11.png'
+// import Award_imge9 from '../../assets/img/Awards-image9.png'
+// import Award_imge10 from '../../assets/img/Awards-image10.png'
+// import Award_imge11 from '../../assets/img/Awards-image11.png'
 import man from '../../assets/img/award-man.svg'
 import gsap from 'gsap';
 import award_logo from '../../assets/img/Awards-Manipal-logo.png'
@@ -25,7 +25,7 @@ import Slider from "react-slick";
 gsap.registerPlugin(ScrollTrigger);
 
 const Slider_box = () => {
-    const [currentindex, setcurrntindex] = useState(0)
+    // const [currentindex, setcurrntindex] = useState(0)
     const manGlassRefs = useRef([]);
     const monkeyGlassRefs = useRef([]);
     // Track if the section is in view
@@ -238,7 +238,7 @@ const Slider_box = () => {
 
                 </div>
                 <div className="absolute monky w-[30vw] md:w-[17vw]  lg:w-[17vw] md:top-[5%] top-[-15%] lg:top-[0] left-[-1.8vw] md:left-[-5vw]  lg:left-[0.5vw] z-10">
-                    <img src={Monkey} className="w-full " alt="Monkey Image" ref={el => monkeyGlassRefs.current[0] = el} />
+                    <img src={Monkey} className="w-full " alt="MonkeyImage" />
                     <img
                         src={Monkey_glass}
                         ref={el => manGlassRefs.current[1] = el}
@@ -247,7 +247,7 @@ const Slider_box = () => {
                     />
                 </div>
                 <div className="absolute man_glass w-[30.1vw] md:w-[17vw] lg:w-[17vw] bottom-[-8.2vw] md:bottom-[6.0vw] lg:bottom-[2.35vw] right-0 md:right-[-3.5vw] lg:right-[0.5vw] z-10">
-                    <img src={man} className="w-full" alt="Monkey Image" ref={el => manGlassRefs.current[0] = el} />
+                    <img src={man} className="w-full" alt="MonkeyImag" />
                     <img
                         src={man_glass}
                         ref={el => manGlassRefs.current[1] = el}
