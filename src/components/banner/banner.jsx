@@ -213,7 +213,7 @@ const Banner = () => {
       </div>
       <div
         id="coffee-icon"
-        className={`icon icon_two ${ishide ? "hidden" : "block"} `}
+        className={`icon icon_two ${ishide ? "hidden" : "block"} cursor-pointer `}
       >
         <img
           src="https://socialpanga.com/wp-content/themes/socialpanga/assets/images/home/banner1/coffee-cup.svg"
