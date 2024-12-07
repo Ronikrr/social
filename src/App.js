@@ -67,9 +67,6 @@ function App() {
   // );
   return (
     <Router>
-
-
-
       <Routes>
         <Route path='/commingsoon' element={<Layout><Home /></Layout>} />
         <Route path='/about' element={<Layout><About /> </Layout>} />
@@ -84,8 +81,6 @@ function App() {
         <Route path='/' element={<Comingsoon />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
-
-
     </Router>
   );
 }
