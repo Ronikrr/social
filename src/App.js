@@ -8,6 +8,7 @@ import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Ourservices from './components/services/ourservices';
+import Servicepage from './pages/servicepage';
 import Ourwork from './pages/ourwork';
 import Awards from './pages/awards';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -69,7 +70,7 @@ function App() {
       <Routes>
         <Route path='/commingsoon' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Ourservices />} />
+        <Route path='/services' element={<Servicepage />} />
         <Route path='/ourwork' element={<Ourwork />} />
         <Route path='/ourwork/:slidetext' element={<Worksupage />} />
         <Route path='/awards' element={<Awards />} />

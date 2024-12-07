@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/img/logo/Asset 1@4x.png'
-import logo2 from '../../assets/img/logo/Asset 2@4x.png'
 const links = [
     // { id: 1, src: "https://www.t3bucket.com/f/0-man1.svg", pagename: "home", path: '/' },
     { id: 2, src: 'https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/about-icon.svg', pagename: "about us", path: "/about" },
@@ -26,26 +25,30 @@ const Header = () => {
         setIsExpanded((prev) => !prev);
         console.log("Menu is now", !isExpanded ? "expanded" : "collapsed");
     };
+
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 300) {
+            if (window.scrollY > 500) {
                 setHeaderStyle({
                     height: "100px",
+                    transition: "height 0.5s ease", // Smooth transition
                     // boxShadow: "0px 4px 2px -2px gray",
                 });
             } else {
                 setHeaderStyle({
                     height: "122px",
+                    transition: "height 0.5s ease", // Smooth transition
                     // boxShadow: "0px 4px 2px -2px gray",
                 });
             }
         };
-        window.addEventListener("scroll", handleScroll);
 
+        window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
