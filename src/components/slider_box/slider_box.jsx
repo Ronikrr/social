@@ -76,7 +76,15 @@ const Slider_box = () => {
             dis_head: 'Audience Honour -',
             dis: 'Physical & Digital Convergence',
             logo: award_logo,
-        }
+        }, {
+            id: 2,
+            heading: "Nothing Short(y)  of Amazing!",
+            src: Award_imge1,
+            head_name: 'SHORTYS 23',
+            dis_head: 'Audience Honour -',
+            dis: 'Physical & Digital Convergence',
+            logo: award_logo,
+        },
 
     ]
     const CustomArrow = ({ className, style, onClick, icon }) => {

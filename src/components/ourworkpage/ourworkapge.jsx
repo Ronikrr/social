@@ -15,6 +15,7 @@ import branding_13 from "../../assets/img/ourwork/branding/SP-website-design-pro
 import branding_14 from "../../assets/img/ourwork/branding/SP-website-design-project-037.png";
 import branding_15 from "../../assets/img/ourwork/branding/SP-website-design-project-038.png";
 import branding_16 from "../../assets/img/ourwork/branding/SP-website-design-project-038.png";
+import { Link } from "react-router-dom";
 
 const Ourworkapge = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
@@ -32,22 +33,22 @@ const Ourworkapge = () => {
 
     // Sample images data
     const images = [
-        { id: 1, src: branding_1, category: "branding" },
-        { id: 2, src: branding_2, category: "branding" },
-        { id: 3, src: branding_3, category: "branding" },
-        { id: 4, src: branding_4, category: "branding" },
-        { id: 5, src: branding_5, category: "branding" },
-        { id: 6, src: branding_6, category: "branding" },
-        { id: 7, src: branding_7, category: "branding" },
-        { id: 8, src: branding_8, category: "branding" },
-        { id: 9, src: branding_9, category: "branding" },
-        { id: 10, src: branding_10, category: "branding" },
-        { id: 11, src: branding_11, category: "branding" },
-        { id: 12, src: branding_12, category: "branding" },
-        { id: 13, src: branding_13, category: "branding" },
-        { id: 14, src: branding_14, category: "branding" },
-        { id: 15, src: branding_15, category: "branding" },
-        { id: 16, src: branding_16, category: "branding" },
+        { id: 1, src: branding_1, sub_text: '', category: "branding" },
+        { id: 2, src: branding_2, sub_text: '', category: "branding" },
+        { id: 3, src: branding_3, sub_text: '', category: "branding" },
+        { id: 4, src: branding_4, sub_text: '', category: "branding" },
+        { id: 5, src: branding_5, sub_text: '', category: "branding" },
+        { id: 6, src: branding_6, sub_text: '', category: "branding" },
+        { id: 7, src: branding_7, sub_text: '', category: "branding" },
+        { id: 8, src: branding_8, sub_text: '', category: "branding" },
+        { id: 9, src: branding_9, sub_text: '', category: "branding" },
+        { id: 10, src: branding_10, sub_text: '', category: "branding" },
+        { id: 11, src: branding_11, sub_text: '', category: "branding" },
+        { id: 12, src: branding_12, sub_text: '', category: "branding" },
+        { id: 13, src: branding_13, sub_text: '', category: "branding" },
+        { id: 14, src: branding_14, sub_text: '', category: "branding" },
+        { id: 15, src: branding_15, sub_text: '', category: "branding" },
+        { id: 16, src: branding_16, sub_text: '', category: "branding" },
     ];
 
     return (
@@ -89,12 +90,12 @@ const Ourworkapge = () => {
                     {/* Displaying Filtered Images */}
                     <div className="flex w-[1600px] mx-auto flex-wrap gallery-images">
                         {filterImages(selectedCategory).map((image) => (
-                            <div
+                            <Link to={`/ourwork/${image.sub_text}`}
                                 key={image.id}
                                 className="image-item w-[25%] flex justify-center mb-[25px]"
                             >
                                 <img src={image.src} alt={image.category} />
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

@@ -59,7 +59,7 @@ const Header = () => {
                 <div className="container flex-col items-center justify-between p-4 mx-auto moblie_size md:flex-row ">
                     <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">
-                            <img src={logo2} className="w-[220px]" alt="Company Logo" />
+                            <img src={logo} className="w-[220px]" alt="Company Logo" />
                         </Link>
                         <button className="text-gray-700 focus:outline-none md:hidden" aria-label="Toggle navigation" onClick={toggleMenu}>
                             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ const Header = () => {
                 <div style={{ ...headerStyle }} className="container wishlist_  flex-col md:h-[122px] items-center justify-between p-4 mx-auto md:flex-row  ">
                     {/* Desktop Menu */} <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">
-                            <img src={logo2} className="w-[220px]" alt="Company Logo" />
+                            <img src={logo} className="w-[220px]" alt="Company Logo" />
                         </Link>
                     </div>
                     <div className="items-center w-auto space-x-6 text-gray-700 wishlist_">
