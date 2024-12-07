@@ -43,7 +43,7 @@ const Contact = () => {
                                     </div>
                                     <div className="w-full pt-[1rem]">
                                         <div className="flex flex-wrap w-full ">
-                                            <div className="w-full md:w-6/12 px-[15px]">
+                                            <div className="w-full  px-[15px]">
                                                 <p className='mb-[1rem] text-center text-[16px]' >
                                                     <strong>Business Enquiries</strong>
                                                     <br />
@@ -52,15 +52,7 @@ const Contact = () => {
                                                     <Link className='font-medium' >hello@socialpanga.com</Link>
                                                 </p>
                                             </div>
-                                            <div className="w-full md:w-6/12 px-[15px]">
-                                                <p className='mb-[1rem] text-center text-[16px]' >
-                                                    <strong>Career Opportunities</strong>
-                                                    <br />
-                                                    <Link className='text-[#cc121c]' >+911234567889</Link>
-                                                    <br />
-                                                    <Link className='font-medium' >coffee@socialpanga.com</Link>
-                                                </p>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>

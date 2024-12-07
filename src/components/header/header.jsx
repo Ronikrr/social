@@ -9,7 +9,7 @@ const links = [
     { id: 4, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/projects-icon.svg", pagename: "our work", path: "/ourwork" },
     { id: 5, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/awards-icon.svg", pagename: "awards", path: "/awards" },
     { id: 6, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/clients-icon.svg", pagename: "clients", path: "/clients" },
-    { id: 7, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/team-icon.svg", pagename: "our team", path: "/team" },
+    // { id: 7, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/team-icon.svg", pagename: "our team", path: "/team" },
     { id: 8, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/career-icon.svg", pagename: "careers", path: "/career" },
     { id: 9, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/contact-icon.svg", pagename: "contact us", path: "/contact" },
 ];
