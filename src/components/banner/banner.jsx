@@ -23,7 +23,7 @@ const Banner = () => {
   ];
 
   return (
-    <div id="para-banner_bg-img" className="-z-10 pt-[50px] md:pt-[105px] slide0 box wishlist" style={{ backgroundImage: bgimage }}>
+    <div id="para-banner_bg-img" className="-z-10 slide0 box wishlist" style={{ backgroundImage: bgimage }}>
       <div
         id="gun-icon"
         className={`icon guns one ${ishide ? "hidden" : "block"} `}
