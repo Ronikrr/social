@@ -4,7 +4,7 @@ import Maintitle from '../components/maintitle'
 const Ourwork = () => {
     Maintitle('BadeBazarkaDigital - Work page')
     return (
-        <div className='data_cla' >
+        <div className='pt-[60px]  md:pt-[122px] data_cla' >
             <Ourworkapge />
         </div>
     )

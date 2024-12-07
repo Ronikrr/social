@@ -100,7 +100,7 @@ const Sliderdata = () => {
                 <div className="flex flex-col items-center justify-center w-full md:w-6/12">
                     <div className="head py-[35px] md:py-[75px] px-[50px]  md:px-[180px">
                         <div className="text-center head_text">
-                            <span className="text-center text-[32px] font-bold leading-3 text-[#f8d200] uppercase">
+                            <span className="text-center text-[32px] font-bold leading-3 text-[#ef4523] uppercase">
                                 {slides[currentslide].text}
                             </span>
                             <Link onClick={scrollToTop} to={`/ourwork/${slides[currentslide].sub_text}`} > <img
@@ -110,7 +110,7 @@ const Sliderdata = () => {
                             /></Link>
                         </div>
                         <div className="text-center pt-[15px] head_text">
-                            <span className="text-center text-[32px] font-bold leading-3 text-[#f8d200] uppercase">
+                            <span className="text-center text-[32px] font-bold leading-3 text-[#ef4523] uppercase">
                                 {slides[currentslide].text}
                             </span>
                         </div>

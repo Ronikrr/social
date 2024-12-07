@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/img/logo/Asset 1@4x.png'
 import logo2 from '../../assets/img/logo/Asset 2@4x.png'
 const links = [
-    { id: 1, src: "https://www.t3bucket.com/f/0-man1.svg", pagename: "home", path: '/' },
+    // { id: 1, src: "https://www.t3bucket.com/f/0-man1.svg", pagename: "home", path: '/' },
     { id: 2, src: 'https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/about-icon.svg', pagename: "about us", path: "/about" },
     { id: 3, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/services-icon.svg", pagename: "services", path: "/services" },
     { id: 4, src: "https://socialpanga.com/wp-content/themes/socialpanga/assets/images/svg-icons/projects-icon.svg", pagename: "our work", path: "/ourwork" },

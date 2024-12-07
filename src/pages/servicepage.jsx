@@ -4,7 +4,7 @@ import Maintitle from '../components/maintitle'
 const Servicepage = () => {
     Maintitle('BadeBazarkaDigital - Service')
     return (    
-        <div className='data_cla' >
+        <div className='pt-[60px]  md:pt-[122px] data_cla' >
             <Ourservices />
         </div>
     )

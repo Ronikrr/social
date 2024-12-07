@@ -94,7 +94,7 @@ const service_page = [
 ]
 const Ourservices = () => {
     return (
-        <div className='pt-[105px] data_cla' >
+        <div className=' data_cla' >
             <div className="container mx-auto lg:max-w-[71.25rem] pt-[1.5rem] pb-[1rem]">
                 <div className="w-full lg:w-[1140px] pb-[1rem] px-[1rem] mx-auto flex flex-wrap items-center">
                     <div className="flex items-center flex-col md:flex-row md:pt-[1rem] p-0 md:px-[1rem] w-full">

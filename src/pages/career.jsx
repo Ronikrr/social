@@ -5,7 +5,7 @@ import Maintitle from '../components/maintitle'
 const Carrer = () => {
     Maintitle("BadeBazarkaDigital - Career Page")
     return (
-        <div className='py-[60px] md:py-[122px] z-[99]' >
+        <div className='py-[60px] md:py-[122px] ' >
             <Carrerslider />
             <Position />
         </div>
