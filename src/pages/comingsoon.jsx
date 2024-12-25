@@ -6,7 +6,7 @@ const ComingSoon = () => {
     const [timeLeft, setTimeLeft] = useState({});
 
     // Set the target date for the countdown
-    const targetDate = new Date("2024-01-31T23:59:59");
+    const targetDate = new Date("2025-01-31T23:59:59");
 
     useEffect(() => {
         const interval = setInterval(() => {
