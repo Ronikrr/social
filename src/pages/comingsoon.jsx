@@ -27,7 +27,7 @@ const ComingSoon = () => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [targetDate]);
+    }, []);
 
     return (
         <div className="flex flex-col items-center justify-center w-screen h-screen text-gray-900 bg-gray-100">
