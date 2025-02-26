@@ -68,7 +68,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=" text-center w-full border-t border-[#f6f6f6] py-[50px]">
+                    <div className=" text-center w-full border-t border-[#999999] py-[25px]">
                         <p>Copyright © {new Date().getFullYear()} All Rights Reserved.</p>
                     </div>
                 </div>
