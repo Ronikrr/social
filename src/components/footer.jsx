@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPinterestP } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -8,6 +9,28 @@ import { BsEnvelope } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
+    const social = [
+        {
+            id: 1,
+            icons: <FaLinkedinIn />,
+            path: ''
+        },
+        {
+            id: 2,
+            icons: <FaXTwitter />,
+            path: ''
+        },
+        {
+            id: 3,
+            icons: <FaFacebookF />,
+            path: 'https://www.facebook.com/profile.php?id=61570416716691'
+        },
+        {
+            id: 4,
+            icons: <FaInstagram />,
+            path: 'https://www.instagram.com/officialsbbd/'
+        },
+    ]
     return (
         <div className="relative overflow-hidden capitalize bg-white shadow-lg footer poppins_thin ">
             <div className="container mx-auto">
@@ -60,9 +83,9 @@ const Footer = () => {
                                 </button>
                             </div>
                             <div className="flex items-center justify-center gap-4 lg:justify-normal ">
-                                {[FaPinterestP, FaXTwitter, FaFacebookF, FaInstagram].map((Icon, index) => (
-                                    <Link key={index} to="#" className="cursor-pointer w-[40px] h-[40px] border-2 transition-all  duration-1000 border-black flex items-center justify-center rounded-full hover:bg-[#ef4523]  ">
-                                        <Icon />
+                                {social.map((item, index) => (
+                                    <Link key={index} to={item.path} target="_blank" className="cursor-pointer w-[40px] h-[40px] border-2 transition-all  duration-1000 border-black flex items-center justify-center rounded-full hover:bg-[#ef4523]  ">
+                                        {item.icons}
                                     </Link>
                                 ))}
                             </div>
