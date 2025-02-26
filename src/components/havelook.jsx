@@ -7,6 +7,7 @@ import img1 from '../assets/howto/Asset 9@4x 1.png';
 import img2 from '../assets/howto/BPH@4x 3.png';
 import img3 from '../assets/howto/Group 450.png';
 import img4 from '../assets/howto/scc 1.png';
+import img5 from '../assets/client/Pragati@4x.png'
 
 const Havealook = () => {
     const images = [
@@ -14,7 +15,8 @@ const Havealook = () => {
         { id: 2, src: img2 },
         { id: 3, src: img4 },
         { id: 4, src: img1 },
-        { id: 5, src: img3 }
+        { id: 5, src: img3 },
+        { id: 6, src: img5 }
     ];
 
     const settings = {
