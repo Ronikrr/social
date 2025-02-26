@@ -17,17 +17,17 @@ const Footer = () => {
                             <Link className="w-full cursor-pointer ">
                                 <img src={Logo} className="h-[51px] w-[191px]" alt="" />
                             </Link>
-                            <Link href="" className="w-full cursor-pointer  flex items-center gap-[15px]">
+                            <Link to={`tel:8200845977`} target="_blank" className="w-full cursor-pointer  flex items-center gap-[15px]">
                                 <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">
                                     <FaPhoneAlt />
                                 </div>
                                 <p className="text-[22px] font-medium " >8200845977</p>
                             </Link>
-                            <Link href="" className="w-full cursor-pointer  flex items-center gap-[15px]">
+                            <Link to={'https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsvPlSsZhhPWFrZkbXxpdStntxfHlpnVVJBSlmXLZSmLcnWlkdkPrRBgXNsqzhfzTvqbq'} className="w-full cursor-pointer   flex items-center gap-[15px]" target="_blank" >
                                 <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">
                                     <BsEnvelope />
                                 </div>
-                                <p className="text-[22px] font-medium " >info.dominname.com</p>
+                                <p className="text-[20px] font-medium " >badebazarkadigital@gmail.com</p>
                             </Link>
                         </div>
                         <div className="flex flex-col w-full lg:w-2/12 ">
