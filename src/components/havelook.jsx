@@ -23,7 +23,7 @@ const Havealook = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
@@ -59,7 +59,7 @@ const Havealook = () => {
                 <div className="w-full mx-auto py-[25px]">
                     <Slider {...settings}>
                         {images.map((data) => (
-                            <div key={data.id} className="flex justify-center">
+                            <div key={data.id} className="flex max-w-[150px]  justify-center">
                                 <img src={data.src} className='object-contain w-full h-[60px] aspect-video' alt="" />
                             </div>
                         ))}

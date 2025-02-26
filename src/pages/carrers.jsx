@@ -2,7 +2,7 @@ import React from 'react'
 
 const Carrers = () => {
     return (
-        <div>Carrers</div>
+        <div></div>
     )
 }
 

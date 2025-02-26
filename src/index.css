@@ -60,7 +60,9 @@ code {
 
 /* Custom Utilities */
 @layer utilities {
-
+.slick-slide {
+    max-width: 100px;
+  }
   :root {
     --theme_black: #171717;
     --theme_white: #f7f7f7;
