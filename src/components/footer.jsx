@@ -21,7 +21,7 @@ const Footer = () => {
                                 <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">
                                     <FaPhoneAlt />
                                 </div>
-                                <p className="text-[22px] font-medium " >9727168583</p>
+                                <p className="text-[22px] font-medium " >8200845977</p>
                             </Link>
                             <Link href="" className="w-full cursor-pointer  flex items-center gap-[15px]">
                                 <div className="w-[30px] h-[30px] border-2 rounded-full border-black flex items-center justify-center">

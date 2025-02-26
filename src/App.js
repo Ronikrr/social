@@ -75,7 +75,6 @@ function App() {
           } />
         </Routes>
       </Router>
-      {/* <div style={{ height: '200vh' }}>Scroll through this content</div> */}
     </div>
 
 
