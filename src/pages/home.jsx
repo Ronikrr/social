@@ -1,18 +1,22 @@
 import React from 'react'
-import Banner from '../components/banner/banner'
-import Sliderdata from '../components/sliderdata/sliderdata'
-import Localsection from '../components/localsection/localsection'
-import Sliderbox from '../components/slider_box/slider_box'
-import Maintitle from '../components/maintitle'
+import Banner from '../components/banner'
+import Whychoose from '../components/whychoose'
+import Aboutsectoion from '../components/aboutsectoion'
+// import HomeVision from '../components/extra/homevision'
+// import Contactbutton from '../components/extra/contactbutton'
+import Exportservice from '../components/exportservice'
+import Havelook from '../components/havelook'
 
 const Home = () => {
-  Maintitle("BadeBazarkaDigital - Home")
   return (
-    <div className='data_cla pt-[60px]  md:pt-[122px]' >
+    <div>
       <Banner />
-      <Sliderdata />
-      <Localsection />
-      <Sliderbox />
+      <Aboutsectoion />
+      <Whychoose /> 
+      <Exportservice />
+      <Havelook />
+      {/* <HomeVision /> */}
+      {/* <Contactbutton /> */}
     </div>
   )
 }
