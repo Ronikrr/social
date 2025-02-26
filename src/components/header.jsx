@@ -6,8 +6,6 @@ const Header = () => {
     const [isopenmenu, setisopenmenu] = useState(false);
     const location = useLocation()
     const [scrolled, setScrolled] = useState(false);
-
-    // Track scroll position
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
