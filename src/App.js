@@ -25,6 +25,7 @@ function App() {
       <Router>
 
         <Routes>
+
           <Route path='/' element={
             <Layout>
               <PageTitle title="Home" />
