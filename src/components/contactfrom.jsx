@@ -33,15 +33,15 @@ const ContactForm = () => {
                         <div className="flex flex-col w-full h-full">
                             <div className="w-full p-10 bg-orange-600 ">
                                 {contact.map((item) => (
-                                    <div key={item.id} className="flex flex-col items-center w-full gap-5 py-5 border-b border-black lg:flex-row">
-                                        <div className="flex justify-center items-center w-[50px] h-[50px] border border-black rounded-full">
+                                    <div key={item.id} className="flex flex-col items-center w-full gap-5 py-5 border-b border-white lg:flex-row">
+                                        <div className="flex justify-center items-center text-white w-[50px] h-[50px] border border-white rounded-full">
                                             {item.icon}
                                         </div>
                                         <div className="overflow-hidden text-center lg:text-left ">
-                                            <h5 className="font-bold text-[18px] lg:text-[20px] capitalize">
+                                            <h5 className="font-bold text-[18px] lg:text-[20px] text-white capitalize">
                                                 {item.title}
                                             </h5>
-                                            <p className="text-[16px]">{item.address}</p>
+                                            <p className="text-[16px] text-white">{item.address}</p>
                                         </div>
                                     </div>
                                 ))}
