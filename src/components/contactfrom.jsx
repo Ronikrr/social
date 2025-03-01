@@ -113,7 +113,8 @@ const ContactForm = () => {
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen
+                    allowFullScreen
+                    className="filter brightness-70 contrast-100 "
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>  
