@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Logo from '../assets/logo/logo.png'
+import Logo from '../assets/avif/logo.webp'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link, useLocation } from 'react-router-dom';
 const Header = () => {

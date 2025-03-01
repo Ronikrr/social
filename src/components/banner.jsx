@@ -1,17 +1,17 @@
 import React from 'react';
-import boy1 from '../assets/banner/Group_4.png';
-import boy2 from '../assets/banner/Group_5.png';
-import image_1 from '../assets/imag/rb_115959.png';
-import image_2 from '../assets/imag/rb_115959_1.png';
-import vector_1 from '../assets/banner/Vector.png';
-import vector_2 from '../assets/banner/Vector_2.png';
-import vector_3 from '../assets/banner/Vector_3.png';
+import boy1 from '../assets/avif/banner/Group_4.webp';
+import boy2 from '../assets/avif/banner/Group_5.webp';
+import image_1 from '../assets/imag/rb_115959.webp';
+import image_2 from '../assets/imag/rb_115959_1.webp';
+import vector_1 from '../assets/avif/banner/Vector.webp';
+import vector_2 from '../assets/avif/banner/Vector_2.webp';
+import vector_3 from '../assets/avif/banner/Vector_3.webp';
 
 const Banner = () => {
 
     return (
         <section
-            className="banner relative pt-[100px] xl:pt-[313px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://uithemez.com/i/artech/home6_modernAgency/assets/img/boxes.png')] before:bg-cover before:bg-center">
+            className="banner relative pt-[100px] xl:pt-[313px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://www.t3bucket.com/f/0-boxes.webp')] before:bg-cover before:bg-center">
 
             <div className="absolute hidden xl:block w-[203px] h-[475px] top-[444px] left-[39px]">
                 <img src={boy2} className='w-full h-full' alt="Boy Image" />
