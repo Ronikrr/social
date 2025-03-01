@@ -23,7 +23,7 @@ const Whychoose = () => {
     return (
         <section className="banner relative py-[25px] lg:py-[100px] w-full">
             <div className="absolute w-full h-[200vh] -z-10">
-                <img src={'https://www.t3bucket.com/f/0-boxes.webp'} className="w-full h-full -rotate-6" alt="Background" />
+                <img src={box} className="w-full h-full -rotate-6" alt="Background" />
             </div>
             <div className="container mx-auto">
                 {/* Heading Section */}
