@@ -31,7 +31,18 @@ const Havealook = () => {
                                 <div key={index} className="w-[100px] h-[100px] flex-shrink-0">
                                     <img src={src} className="object-contain w-full h-full" alt="Brand" />
                                 </div>
-                            ))}  {images.concat(images).map((src, index) => (
+                            ))}
+                            {images.concat(images).map((src, index) => (
+                                <div key={index} className="w-[100px] h-[100px] flex-shrink-0">
+                                    <img src={src} className="object-contain w-full h-full" alt="Brand" />
+                                </div>
+                            ))}
+                            {images.concat(images).map((src, index) => (
+                                <div key={index} className="w-[100px] h-[100px] flex-shrink-0">
+                                    <img src={src} className="object-contain w-full h-full" alt="Brand" />
+                                </div>
+                            ))}
+                            {images.concat(images).map((src, index) => (
                                 <div key={index} className="w-[100px] h-[100px] flex-shrink-0">
                                     <img src={src} className="object-contain w-full h-full" alt="Brand" />
                                 </div>
@@ -51,7 +62,7 @@ const Havealook = () => {
                     display: flex;
                     white-space: nowrap;
                     width: max-content;
-                    animation: scroll 20s linear infinite;
+                    animation: scroll 100s linear infinite;
                 }
             `}</style>
         </section>
