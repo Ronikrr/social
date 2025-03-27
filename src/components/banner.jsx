@@ -11,7 +11,7 @@ const Banner = () => {
 
     return (
         <section
-            className="banner relative pt-[100px] xl:pt-[213px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen  before:bg-cover before:bg-center" style={{ backgroundImage: "url('https://www.t3bucket.com/f/0-boxes.webp')" }}
+            className="banner relative pt-[100px] xl:pt-[213px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://www.t3bucket.com/f/0-boxes.webp')] before:bg-cover before:bg-center"
         >
 
             <div className="absolute hidden xl:block w-[203px] h-[475px] top-[327px] 3xl:top-[350px] left-[39px]">
