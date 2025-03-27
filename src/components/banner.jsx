@@ -7,22 +7,22 @@ import vector_1 from '../assets/avif/banner/Vector.webp';
 import vector_2 from '../assets/avif/banner/Vector_2.webp';
 import vector_3 from '../assets/avif/banner/Vector_3.webp';
 
-const Banner = () => {
+const Banner = () => {  
 
     return (
         <section
-            className="banner relative pt-[100px] xl:pt-[313px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://www.t3bucket.com/f/0-boxes.webp')] before:bg-cover before:bg-center">
+            className="banner relative pt-[100px] xl:pt-[213px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://www.t3bucket.com/f/0-boxes.webp')] before:bg-cover before:bg-center">
 
-            <div className="absolute hidden xl:block w-[203px] h-[475px] top-[444px] left-[39px]">
+            <div className="absolute hidden xl:block w-[203px] h-[475px] top-[327px] 3xl:top-[350px] left-[39px]">
                 <img src={boy2} className='w-full h-full' alt="Boy Image" />
             </div>
-            <div className="absolute hidden xl:block 2xl:top-[105px] xl:top-[175px] w-[20%] 2xl:left-[14px]">
+            <div className="absolute hidden xl:block 2xl:top-[40px] xl:top-[70px] w-[20%] 2xl:left-[14px]">
                 <img src={image_1} className='w-full' alt="Image 1" />
                 <div className="xl:text-[30px] 4xl:text-[34px] w-[40%] absolute xl:top-[30%] 4xl:top-[117px] 4xl:right-[86px] xl:right-[70px] germania_one_regular">
                     kya kar <br /> rahe ho..
                 </div>
             </div>
-            <div className="absolute hidden xl:block 2xl:top-[105px] xl:top-[175px] w-[37%]  right-[-7%] 2xl:right-[-50px]">
+            <div className="absolute hidden xl:block 2xl:top-[40px] xl:top-[70px] w-[37%]  right-[-7%] 2xl:right-[-50px]">
                 <img src={image_2} className='w-full' alt="Image 2" />
                 <div className="xl:text-[30px] 4xl:text-[34px] text-center w-[50%] absolute lg:top-[32%] lg:right-[24%] xl:top-[32%] 4xl:top-[210px] xl:right-[25%] 4xl:right-[165px] germania_one_regular">
                     kuch nahi <br />
@@ -55,7 +55,7 @@ const Banner = () => {
                 </h1>
             </div>
 
-            <div className="absolute hidden xl:block  top-[623px] w-[185px] h-[457px] right-[46px]">
+            <div className="absolute hidden xl:block  xl:top-[500px] 2xl:top-[495px] w-[185px] h-[457px] right-[46px]">
                 <img src={boy1} className='w-full h-full' alt="Boy 1" />
             </div>
         </section>
