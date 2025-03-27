@@ -20,17 +20,17 @@ const WhyChooseItem = ({ title, description, extraClasses = "" }) => {
 
 const Whychoose = () => {
     return (
-        <section className="banner relative py-[25px] lg:py-[100px] w-full">
+        <section className="banner relative py-[25px] lg:py-[40px] w-full">
             <div className="absolute w-full h-[200vh] -z-10">
                 <img src={box} className="w-full h-full -rotate-6" alt="Background" />
             </div>
             <div className="container mx-auto">
                 {/* Heading Section */}
                 <div className="flex flex-col justify-center text-center head">
-                    <h1 className="text-[20px] sm:text-[50px] goblin_one_regular">Why Choose Us..!</h1>
+                    <h1 className="text-[20px] sm:text-[35px] goblin_one_regular">Why Choose Us..!</h1>
                     <div className="mx-auto w-full md:w-[600px] relative mb-[25px] lg:mb-[75px]">
                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] z-50"></div>
-                        <p className="text-[20px] sm:text-[25px] poppins_thin text-[#ef4523]">"Why Choose BBD ?"</p>
+                        <p className="text-[20px] sm:text-[24px] poppins_thin text-[#ef4523]">"Why Choose BBD ?"</p>
                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] right-0 z-50"></div>
                     </div>
                 </div>

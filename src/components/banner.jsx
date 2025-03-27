@@ -22,9 +22,9 @@ const Banner = () => {
                     kya kar <br /> rahe ho..
                 </div>
             </div>
-            <div className="absolute hidden xl:block 2xl:top-[40px] xl:top-[70px] w-[37%]  right-[-7%] 2xl:right-[-50px]">
+            <div className="absolute hidden xl:block 2xl:top-[10px] xl:top-[40px] w-[32%]  right-[-7%] 2xl:right-[-50px]">
                 <img src={image_2} className='w-full' alt="Image 2" />
-                <div className="xl:text-[30px] 4xl:text-[34px] text-center w-[50%] absolute lg:top-[32%] lg:right-[24%] xl:top-[32%] 4xl:top-[210px] xl:right-[25%] 4xl:right-[165px] germania_one_regular">
+                <div className="xl:text-[25px] 4xl:text-[26px] text-center w-[50%] absolute lg:top-[32%] lg:right-[24%] xl:top-[32%] 4xl:top-[210px] xl:right-[25%] 4xl:right-[165px] germania_one_regular">
                     kuch nahi <br />
                     digital agency dundh <br />
                     raha hu.!
@@ -55,7 +55,7 @@ const Banner = () => {
                 </h1>
             </div>
 
-            <div className="absolute hidden xl:block  xl:top-[500px] 2xl:top-[495px] w-[185px] h-[457px] right-[46px]">
+            <div className="absolute hidden xl:block  xl:top-[429px] 2xl:top-[475px] w-[185px] h-[457px] right-[46px]">
                 <img src={boy1} className='w-full h-full' alt="Boy 1" />
             </div>
         </section>

@@ -16,10 +16,10 @@ const Exportservice = () => {
             </div>
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center text-center head">
-                    <h1 className="text-[20px] sm:text-[50px] goblin_one_regular">Our Expert Services</h1>
+                    <h1 className="text-[20px] sm:text-[35px] goblin_one_regular">Our Expert Services</h1>
                     <div className="mx-auto w-full md:w-[800px] relative mb-[25px] lg:mb-[50px]">
                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] left-[-20%] z-50"></div>
-                        <p className="text-[15px] sm:text-[25px] poppins_thin text-[#ef4523]">“We help brands grow with customized marketing strategies.”</p>
+                        <p className="text-[15px] sm:text-[24px] poppins_thin text-[#ef4523]">“We help brands grow with customized marketing strategies.”</p>
                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] right-[-20%] z-50"></div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const Exportservice = () => {
                         return (
                             <div className="w-full py-[25px] text-center my-[20px] me-0 lg:me-[20px] rounded-[20px] h-[150px] space-y-[10px] xl:w-[514px] border border-black " key={index}>
                                 <h1 className='poppins_thin text-[17px] lg:text-[24px] font-medium'> {data.title} </h1>
-                                <p className='poppins_thin px-5 lg:px-[75px]' > {data.subtitle} </p>
+                                <p className='poppins_thin px-5 text-[14px] sm:text-[18px]  lg:px-[75px]' > {data.subtitle} </p>
                             </div>
                         )
                     })}
