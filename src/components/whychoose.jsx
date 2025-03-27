@@ -3,13 +3,13 @@ import React from 'react';
 
 import box from '../assets/New folder/boxes (1).png';
 
-const WhyChooseItem = ({ title, description, extraClasses = "" }) => {
+const WhyChooseItem = ({ title, description, extraClasses = "", subextraClasses = "" }) => {
     return (
         <div className={`relative my-10 lg:my-0 flex items-center w-full poppins_thin justify-center ${extraClasses} flex-col sm:flex-row`}>
-            <div className="flex flex-col relative right-0 justify-center w-full text-center xl:w-[525px] 2xl:w-[754px] head">
+            <div className={`flex flex-col relative right-0 justify-center w-full text-center xl:w-[525px] 2xl:w-[754px] ${subextraClasses} head`}>
                 <img src={"https://www.t3bucket.com/f/0-image178.webp"} className="hidden lg:block xl:w-[180px] xl:h-[180px] 2xl:w-[306px] sm:w-[106px] 2xl:h-[306px] sm:h-[206px] left-[-40%] lg:left-0 absolute" alt="" />
                 <h1 className="text-[18px] sm:text-[24px]">✅ {title}</h1>
-                <div className="mx-auto w-full md:w-[400px] relative xl:mt-[75px] 2xl:mt-[150px]">
+                <div className="mx-auto w-full md:w-[400px] xl:w-[300px] 2xl:w-[400px] relative xl:mt-[75px] 2xl:mt-[150px]">
                     <p className="text-[14px] sm:text-[18px] poppins_thin text-black">{description}</p>
                 </div>
                 <img src={"https://www.t3bucket.com/f/0-image178.webp"} className="hidden lg:block xl:w-[180px] xl:h-[180px] 2xl:w-[306px] sm:w-[106px] 2xl:h-[306px] sm:h-[206px] right-[-40%] lg:right-0 absolute" alt="" />
@@ -51,18 +51,19 @@ const Whychoose = () => {
                     title="Cutting-Edge Tools"
                     description="Utilizing advanced marketing technologies for the best results"
                     extraClasses="xl:justify-end lg:pt-[150px]"
+                    subextraClasses="xl:mr-[75px] 2xl:mr-0"
                 />
 
                 <WhyChooseItem
                     title="Customized Strategies"
                     description="Tailored marketing plans that fit your business needs"
-                    extraClasses="xl:top-[54%] 2xl:top-[52%] xl:justify-start lg:pt-[50px]"
+                    extraClasses="xl:top-[54%] 2xl:top-[52%] xl:justify-start lg:pt-[0px] xl:ml-[75px] 2xl:ml-0"
                 />
 
                 <WhyChooseItem
                     title="24/7 Support"
                     description="Dedicated assistance whenever you need it"
-                    extraClasses="xl:justify-center lg:pt-[300px] xl:pt-[200px] 2xl:pt-[150px]"
+                    extraClasses="xl:justify-center lg:pt-[300px] xl:pt-[80px] 2xl:pt-[150px]"
                 />
             </div>
         </section>
