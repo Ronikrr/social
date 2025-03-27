@@ -50,7 +50,7 @@ const Whychoose = () => {
                 <WhyChooseItem
                     title="Cutting-Edge Tools"
                     description="Utilizing advanced marketing technologies for the best results"
-                    extraClasses="xl:justify-end lg:pt-[150px]"
+                    extraClasses="xl:justify-end lg:pt-[150px] xl:pt-[80px] 2xl:pt-[150px]"
                     subextraClasses="xl:mr-[75px] 2xl:mr-0"
                 />
 
