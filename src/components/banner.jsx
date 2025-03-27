@@ -1,17 +1,18 @@
 import React from 'react';
-import boy1 from '../assets/avif/banner/Group_4.webp';
-import boy2 from '../assets/avif/banner/Group_5.webp';
-import image_1 from '../assets/imag/rb_115959.webp';
-import image_2 from '../assets/imag/rb_115959_1.webp';
-import vector_1 from '../assets/avif/banner/Vector.webp';
-import vector_2 from '../assets/avif/banner/Vector_2.webp';
-import vector_3 from '../assets/avif/banner/Vector_3.webp';
+const image_1 = require('../assets/imag/rb_115959.webp');
+const image_2 = require('../assets/imag/rb_115959_1.webp');
+const vector_1 = require('../assets/avif/banner/Vector.webp');
+const vector_2 = require('../assets/avif/banner/Vector_2.webp');
+const vector_3 = require('../assets/avif/banner/Vector_3.webp');
+const boy1 = require('../assets/avif/banner/Group_4.webp');
+const boy2 = require('../assets/avif/banner/Group_5.webp');
 
 const Banner = () => {  
 
     return (
         <section
-            className="banner relative pt-[100px] xl:pt-[213px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://www.t3bucket.com/f/0-boxes.webp')] before:bg-cover before:bg-center">
+            className="banner relative pt-[100px] xl:pt-[213px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen  before:bg-cover before:bg-center" style={{ backgroundImage: "url('https://www.t3bucket.com/f/0-boxes.webp')" }}
+        >
 
             <div className="absolute hidden xl:block w-[203px] h-[475px] top-[327px] 3xl:top-[350px] left-[39px]">
                 <img src={boy2} className='w-full h-full' alt="Boy Image" />
