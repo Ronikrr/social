@@ -136,7 +136,7 @@ const Whychoose = () => {
                 className={`absolute w-full h-full lg:h-[100vh] 2xl:h-[175vh] -z-10 transition-opacity duration-500 ${isLoaded ? "opacity-100" : "opacity-0"
                     }`}
                 style={{
-                    backgroundImage: `url(${isLoaded ? box : "data:image/svg+xml;base64,..."})`, // Placeholder
+                    backgroundImage: `url(${isLoaded ? box : "https://www.t3bucket.com/f/0-boxes(1).png"})`, // Placeholder
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
