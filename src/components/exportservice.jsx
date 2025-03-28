@@ -12,7 +12,7 @@ const Exportservice = () => {
     return (
         <section className="banner relative  pt-[50px] pb-[50px] h-full lg:pt-[80px] lg:pb-[50px] w-full ">
             <div className="absolute w-full h-[135vh] -z-10">
-                <img src={box} className="w-full h-full rotate-6" alt="" />
+                <img src={box} className="w-full h-full opacity-100 rotate-6" alt="" />
             </div>
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center text-center head">
