@@ -1,28 +1,23 @@
 import './App.css';
+import Home from './pages/home';
+import About from './pages/aboutpage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { lazy, Suspense, useEffect } from 'react';
 import Header from './components/header';
+import Servicepage from './pages/servicepage';
+import PageTitle from './components/extra/pagetitle';
+import Ourwork from './pages/ourwork';
+import Awards from './pages/awards';
+import Client from './pages/client';
+import Carrers from './pages/carrers';
+import Contact from './pages/contact';
 import Footer from './components/footer';
-
-// Lazy-loaded components
-const Home = lazy(() => import('./pages/home'));
-const About = lazy(() => import('./pages/aboutpage'));
-const Servicepage = lazy(() => import('./pages/servicepage'));
-const PageTitle = lazy(() => import('./components/extra/pagetitle'));
-const Ourwork = lazy(() => import('./pages/ourwork'));
-const Awards = lazy(() => import('./pages/awards'));
-const Client = lazy(() => import('./pages/client'));
-const Careers = lazy(() => import('./pages/carrers'));
-const Contact = lazy(() => import('./pages/contact'));
+import { useEffect } from 'react';
 function App() {
 
   const Layout = ({ children }) => (
     <>
       <Header />
-      <Suspense fallback={<div>Loading...</div>} >
-
       <main>{children}</main>
-      </Suspense>
       <Footer />
     </>
   );
@@ -94,7 +89,7 @@ function App() {
           <Route path='/carrers' element={
             <Layout>
               <PageTitle title="Carrer page" />
-              <Careers />
+              <Carrers />
             </Layout>
           } />
           <Route path='/contact' element={
