@@ -102,6 +102,13 @@ const Whychoose = () => {
     const [scrolled, setScrolled] = useState(false);
 
     // Handle scroll effect
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = box;
+        img.onload = () => setIsLoaded(true);
+    }, []);
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -122,9 +129,19 @@ const Whychoose = () => {
     return (
         <section className="banner relative py-[25px] lg:py-[40px] w-full">
             {/* Background Image */}
-            <div className={`absolute w-full h-[100vh] 2xl:h-[175vh] -z-10 transition-opacity duration-500 ${scrolled ? "opacity-90" : "opacity-100"}`}>
+            {/* <div className={`absolute w-full h-full lg:h-[100vh] 2xl:h-[175vh] -z-10 transition-opacity duration-500  opacity-100`}>
                 <img src={box} className="w-full h-full -rotate-6" alt="Background" />
-            </div>
+            </div> */}
+            <div
+                className={`absolute w-full h-full lg:h-[100vh] 2xl:h-[175vh] -z-10 transition-opacity duration-500 ${isLoaded ? "opacity-100" : "opacity-0"
+                    }`}
+                style={{
+                    backgroundImage: `url(${isLoaded ? box : "data:image/svg+xml;base64,..."})`, // Placeholder
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+            />
+
 
             <div className="container mx-auto">
                 {/* Heading Section */}
