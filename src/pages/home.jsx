@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 // import Banner from '../components/banner'
 // import Whychoose from '../components/whychoose'
 // import Aboutsectoion from '../components/aboutsectoion'
@@ -14,11 +14,13 @@ const Havelook = React.lazy(() => import("../components/havelook"))
 const Home = () => {
   return (
     <div>
-      <Banner />
-      <Aboutsectoion />
-      <Whychoose /> 
-      <Exportservice />
-      <Havelook />
+      <Suspense fallback={<p>loading...</p>} >
+        <Banner />
+        <Aboutsectoion />
+        <Whychoose />
+        <Exportservice />
+        <Havelook />
+      </Suspense>
       {/* <HomeVision /> */}
       {/* <Contactbutton /> */}
     </div>
