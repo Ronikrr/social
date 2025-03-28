@@ -129,18 +129,10 @@ const Whychoose = () => {
     return (
         <section className="banner relative py-[25px] lg:py-[40px] w-full">
             {/* Background Image */}
-            {/* <div className={`absolute w-full h-full lg:h-[100vh] 2xl:h-[175vh] -z-10 transition-opacity duration-500  opacity-100`}>
-                <img src={box} className="w-full h-full -rotate-6" alt="Background" />
-            </div> */}
-            <div
-                className={`absolute w-full h-full lg:h-[100vh] 2xl:h-[175vh] -rotate-6 -z-10 transition-opacity duration-500 ${isLoaded ? "opacity-100" : "opacity-0"
-                    }`}
-                style={{
-                    backgroundImage: `url("https://www.t3bucket.com/f/0-boxes(1).png")`, // Placeholder
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                }}
-            />
+            <div className={`absolute w-full h-full lg:h-[100vh] 2xl:h-[175vh] -z-10 transition-opacity duration-500  opacity-100`}>
+                <img src={box} className="w-full h-full -rotate-6" loading='lazy' alt="Background" />
+            </div>
+
 
 
             <div className="container mx-auto">
