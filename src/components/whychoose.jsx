@@ -156,7 +156,7 @@ const Whychoose = () => {
 
                 {/* Image Section */}
                 <div className="flex flex-col relative pb-[50px] lg:pb-[95px] xl:absolute xl:left-32 4xl:top-[200px] 4xl:left-[100px] justify-center w-full mx-auto text-center md:w-[436px] h-full lg:h-[506px] head">
-                    <img src={"https://www.t3bucket.com/f/0-rb_86609.webp"} className="xl:w-[300px] xl:h-[365px] 4xl:w-[436px] 4xl:h-[506px]" alt="Boy" />
+                    <img src={"https://www.t3bucket.com/f/0-rb_86609.webp"} loading='lazy' className="xl:w-[300px] xl:h-[365px] 4xl:w-[436px] 4xl:h-[506px]" alt="Boy" />
                 </div>
 
                 {/* Dynamic Sections */}
