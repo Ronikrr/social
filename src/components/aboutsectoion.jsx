@@ -1,5 +1,5 @@
 import React from 'react'
-
+// import SectionHeader from './extra/SectionHeader'
 const Aboutsectoion = () => {
     return (
         <section

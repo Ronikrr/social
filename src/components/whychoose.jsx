@@ -74,6 +74,8 @@
 
 import React, { useState, useEffect } from 'react';
 import box from '../assets/New folder/boxes (1).png';
+import SectionHeader from './extra/SectionHeader';
+import { cn } from '../utils/cn';
 
 const WhyChooseItem = ({ title, description, extraClasses = "", subextraClasses = "" }) => {
     return (
@@ -127,25 +129,23 @@ const Whychoose = () => {
     ];
 
     return (
-        <section className="banner relative py-[25px] lg:py-[40px] w-full">
+        <section className="banner lg:h-screen 2xl:h-full relative py-[25px] lg:py-[40px] w-full">
             {/* Background Image */}
-            <div className={`absolute w-full h-full lg:h-[100vh] 2xl:h-[175vh] -z-10 transition-opacity duration-500  opacity-100`}>
-                <img src={box} className="w-full h-full -rotate-6" loading='lazy' alt="Background" />
-            </div>
-
-
-
+            <div
+                className={cn(
+                    "absolute inset-0 h-full  w-full lg:w-[250vh]   lg:left-[-10%] lg:h-[200vh] lg:-rotate-6 4xl:h-[90vh] ",
+                    "[background-size:40px_40px]",
+                    "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+                    "dark:[background-image:linear-gradient(to_right,#26262620_1px,transparent_1px),linear-gradient(to_bottom,#26262620_1px,transparent_1px)]",
+                )}
+            />
             <div className="container mx-auto">
                 {/* Heading Section */}
-                <div className="flex flex-col justify-center text-center head">
-                    <h1 className="text-[20px] sm:text-[35px] goblin_one_regular">Why Choose Us..!</h1>
-                    <div className="mx-auto w-full md:w-[600px] relative mb-[25px] lg:mb-[75px]">
-                        <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] z-50"></div>
-                        <p className="text-[20px] sm:text-[24px] poppins_thin text-[#ef4523]">"Why Choose BBD ?"</p>
-                        <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] right-0 z-50"></div>
-                    </div>
-                </div>
 
+                <SectionHeader
+                    title="Why Choose Us..!"
+                    subtitle="Why Choose BBD ?"
+                />
                 {/* Image Section */}
                 <div className="flex flex-col relative pb-[50px] lg:pb-[95px] xl:absolute xl:left-32 4xl:top-[200px] 4xl:left-[100px] justify-center w-full mx-auto text-center md:w-[436px] h-full lg:h-[506px] head">
                     <img src={"https://www.t3bucket.com/f/0-rb_86609.webp"} loading='lazy' className="xl:w-[300px] xl:h-[365px] 4xl:w-[436px] 4xl:h-[506px]" alt="Boy" />

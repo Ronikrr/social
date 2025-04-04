@@ -46,6 +46,8 @@ module.exports = {
       animation: {
         'vision-scrolllines-mov': 'vision-scrolllines-mov 8s linear infinite',
         'vision-scrolllines-move': 'vision-scrolllines-move 8s linear infinite',
+        scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+
       },
       keyframes: {
         'vision-scrolllines-mov': {
@@ -55,6 +57,11 @@ module.exports = {
         'vision-scrolllines-move': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(100%)' },
+        },
+        scroll: {
+          to: {
+            transform: 'translate(calc(-50% - 0.5rem))',
+          },
         },
       },
       container: {
@@ -68,6 +75,7 @@ module.exports = {
           '2xl': '1320px',
           '3xl': '1400px',
           '4xl': '1684px',
+          '5xl': '1700px',
         },
       },
     },

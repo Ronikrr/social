@@ -66,6 +66,7 @@
 // export default Banner;
 
 import React, { useState } from 'react';
+import { cn } from '../utils/cn';
 
 const Banner = () => {
     const [images] = useState({
@@ -79,7 +80,15 @@ const Banner = () => {
     });
 
     return (
-        <section className="banner relative pt-[100px] xl:pt-[213px] before:absolute before:top-0 before:left-0 before:w-screen before:h-screen before:bg-[url('https://www.t3bucket.com/f/0-boxes.webp')] before:bg-cover before:bg-center">
+        <section className="banner h-screen 2xl:h-full w-full  relative pt-[100px] xl:pt-[213px] ">
+            <div
+                className={cn(
+                    "absolute inset-0 h-full w-full lg:w-[250vh]   left-[-2%] lg:h-[125vh] lg:rotate-6 top-[-10%] 4xl:h-[75vh]",
+                    "[background-size:40px_40px]",
+                    "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+                    "dark:[background-image:linear-gradient(to_right,#26262620_1px,transparent_1px),linear-gradient(to_bottom,#26262620_1px,transparent_1px)]",
+                )}
+            />
             <div className="absolute hidden xl:block w-[203px] h-[475px] top-[327px] 3xl:top-[350px] left-[39px]">
                 <img src={images.boy2} className='w-full h-full' alt="Boy Image" loading='lazy' />
             </div>

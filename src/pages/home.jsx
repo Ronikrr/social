@@ -11,6 +11,7 @@ const Whychoose = React.lazy(() => import("../components/whychoose"))
 const Aboutsectoion = React.lazy(() => import("../components/aboutsectoion"))
 const Exportservice = React.lazy(() => import("../components/exportservice"))
 const Havelook = React.lazy(() => import("../components/havelook"))
+const Review = React.lazy(() => import("../components/Review"))
 const Home = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const Home = () => {
         <Whychoose />
         <Exportservice />
         <Havelook />
+        <Review />
       </Suspense>
       {/* <HomeVision /> */}
       {/* <Contactbutton /> */}
