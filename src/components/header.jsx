@@ -163,7 +163,7 @@ const Header = () => {
                 <div className="flex items-center justify-between w-full">
                     {/* Logo */}
                     <Link to="/" className="inline-block py-[8px]">
-                        <img src={Logo} className="h-[60px]" alt="Logo" />
+                        <img src={Logo} className="h-[60px] cursor-pointer" alt="Logo" />
                     </Link>
 
                     {/* Nav Links */}

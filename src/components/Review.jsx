@@ -49,7 +49,7 @@ const Review = () => {
                     title="Rewiews"
                     subtitle="“Client Feedback & Testimonials”"
                 />
-                <div className="w-full h-full flex items-center justify-center relative overflow-hidden poppins_thin">
+                <div className="w-full h-full text-white flex items-center justify-center relative overflow-hidden poppins_thin">
                     <InfiniteMovingCards
                         items={testimonials}
                         direction="right"

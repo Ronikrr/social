@@ -12,11 +12,11 @@ const Exportservice = () => {
     ]
 
     return (
-        <section className="banner relative  pt-[50px] pb-[50px] h-full lg:pt-[80px] lg:pb-[50px] w-full ">
+        <section className="banner relative  pt-[50px] pb-[50px] h-full lg:pt-[80px] lg:pb-[50px]  w-full ">
 
             <div
                 className={cn(
-                    "absolute inset-0 h-full w-full lg:w-[250vh]   lg:left-[-5%] lg:h-[100vh] lg:rotate-6 lg:top-[20%] 4xl:top-[20%] 4xl:h-[50vh]",
+                    "absolute inset-0 -z-20 h-full w-full lg:w-[250vh]   lg:left-[-5%] lg:h-[100vh] lg:rotate-6 lg:top-[20%] 4xl:top-[20%] 4xl:h-[50vh]",
                     "[background-size:40px_40px]",
                     "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
                     "dark:[background-image:linear-gradient(to_right,#26262620_1px,transparent_1px),linear-gradient(to_bottom,#26262620_1px,transparent_1px)]",

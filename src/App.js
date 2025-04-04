@@ -12,6 +12,7 @@ import Carrers from './pages/carrers';
 import Contact from './pages/contact';
 import Footer from './components/footer';
 import { useEffect } from 'react';
+import RoutesnotFound from './pages/RoutesnotFound';
 function App() {
 
   const Layout = ({ children }) => (
@@ -22,30 +23,13 @@ function App() {
     </>
   );
 
-  useEffect(() => {
-    const detectScreenCapture = () => {
-      document.body.style.filter = "blur(10px)";
-      setTimeout(() => {
-        document.body.style.filter = "none";
-      }, 3000); // Remove blur after 3 seconds
-    };
 
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "PrintScreen") {
-        detectScreenCapture();
-      }
-    });
-
-    return () => {
-      document.removeEventListener("keydown", detectScreenCapture);
-    };
-  }, []);
 
 
 
 
   return (
-    <div id="scroll-container">
+
       <Router>
 
         <Routes>
@@ -86,7 +70,7 @@ function App() {
               <Client />
             </Layout>
           } />
-          <Route path='/carrers' element={
+        <Route path='/careers' element={
             <Layout>
               <PageTitle title="Carrer page" />
               <Carrers />
@@ -98,9 +82,14 @@ function App() {
               <Contact />
             </Layout>
           } />
+        <Route path='*' element={
+          <>
+            <PageTitle title="404" />
+            <RoutesnotFound />
+          </>
+        } />
         </Routes>
-      </Router>
-    </div>
+    </Router>
 
 
   );
