@@ -12,10 +12,11 @@ const Aboutsectoion = React.lazy(() => import("../components/aboutsectoion"))
 const Exportservice = React.lazy(() => import("../components/exportservice"))
 const Havelook = React.lazy(() => import("../components/havelook"))
 const Review = React.lazy(() => import("../components/Review"))
+const Loading = React.lazy(() => import('../components/extra/Loading'))
 const Home = () => {
   return (
     <div>
-      <Suspense fallback={<p>loading...</p>} >
+      <Suspense fallback={<Loading />} >
         <Banner />
         <Aboutsectoion />
         <Whychoose />
