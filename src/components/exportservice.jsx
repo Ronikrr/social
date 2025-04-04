@@ -1,6 +1,5 @@
 import React from 'react'
-import box from '../assets/New folder/boxes (1).png'
-import SectionHeader from './extra/SectionHeader'
+
 import { cn } from '../utils/cn'
 const Exportservice = () => {
     const data = [

@@ -80,7 +80,7 @@ const Banner = () => {
     });
 
     return (
-        <section className="banner h-screen 2xl:h-full w-full  relative pt-[100px] xl:pt-[213px] ">
+        <section className="banner md:h-screen 2xl:h-full w-full  relative pt-[100px] xl:pt-[213px] ">
             <div
                 className={cn(
                     "absolute inset-0 h-full w-full lg:w-[250vh]   left-[-2%] lg:h-[125vh] lg:rotate-6 top-[-10%] 4xl:h-[75vh]",
