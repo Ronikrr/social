@@ -124,17 +124,17 @@ const Whychoose = () => {
     // List of features
     const features = [
         { title: "Expert Digital Marketers", description: "Skilled professionals crafting winning marketing strategies", extraClasses: "xl:justify-center lg:pt-[95px]" },
-        { title: "Cutting-Edge Tools", description: "Utilizing advanced marketing technologies for the best results", extraClasses: "xl:justify-end lg:pt-[150px] xl:pt-[80px] 2xl:pt-[150px]", subextraClasses: "xl:mr-[75px] 2xl:mr-0" },
+        { title: "Cutting-Edge Tools", description: "Utilizing advanced marketing technologies for the best results", extraClasses: "xl:justify-end lg:pt-[150px] xl:pt-[80px] 2xl:pt-[150px]", subextraClasses: "lg:mr-0 xl:mr-[75px] 2xl:mr-0" },
         { title: "Customized Strategies", description: "Tailored marketing plans that fit your business needs", extraClasses: "xl:top-[54%] 2xl:top-[52%] xl:justify-start lg:pt-[0px] xl:ml-[75px] 2xl:ml-0" },
         { title: "24/7 Support", description: "Dedicated assistance whenever you need it", extraClasses: "xl:justify-center lg:pt-[300px] xl:pt-[80px] 2xl:pt-[150px]" }
     ];
 
     return (
-        <section className="banner lg:h-screen 2xl:h-full relative py-[25px] lg:py-[40px] w-full">
+        <section className="banner h-full 2xl:h-full relative py-[25px] lg:py-[40px] w-full">
             {/* Background Image */}
             <div
                 className={cn(
-                    "absolute inset-0 h-full  w-full lg:w-[250vh]   lg:left-[-10%] lg:h-[200vh] lg:-rotate-6 4xl:h-[90vh] ",
+                    "absolute inset-0 h-full  w-full lg:w-[250vh]   lg:left-[-10%]  lg:h-[200vh] xl:h-[100vh] lg:-rotate-6 2xl:h-[200vh] 4xl:h-[90vh] ",
                     "[background-size:40px_40px]",
                     "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
                     "dark:[background-image:linear-gradient(to_right,#26262620_1px,transparent_1px),linear-gradient(to_bottom,#26262620_1px,transparent_1px)]",
