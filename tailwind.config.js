@@ -10,6 +10,9 @@ module.exports = {
         50: '50%',
         100: '100%'
       },
+      colors:{
+        primary: "#ef4523"
+      },
       brightness: {
 
         1000: '1',

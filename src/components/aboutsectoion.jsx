@@ -10,7 +10,7 @@ const Aboutsectoion = () => {
                     <div className="  mx-auto w-full md:w-[600px]  relative mb-[15px] lg:mb-[40px] ">
                         <div className="absolute hidden md:block bg-black w-[153px] h-[2px] top-[50%] left-[-59px] z-50">
                         </div>
-                        <p className='text-base lg:text-[24px] instrument text-[#ef4523]' >"Your Trusted Digital Growth Partner"</p>
+                        <p className='text-base lg:text-[24px] instrument text-primary' >"Your Trusted Digital Growth Partner"</p>
                         <div className="absolute hidden md:block bg-black w-[153px] h-[2px] top-[50%] right-[-59px] z-50">
                         </div>
                     </div>

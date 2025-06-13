@@ -18,7 +18,7 @@
 //                     <h1 className="text-xl font-bold goblin_one_regular sm:text-[35px] mb-2">Have a Look</h1>
 //                     <div className="mx-auto w-full md:w-[800px] relative mb-8">
 //                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] left-[16%]"></div>
-//                         <p className="text-base sm:text-[18px] poppins_thin  text-[#ef4523]">“We’re Working with”</p>
+//                         <p className="text-base sm:text-[18px] poppins_thin  text-primary">“We’re Working with”</p>
 //                         <div className="absolute hidden md:block bg-black w-[170px] h-[1px] top-[50%] right-[16%]"></div>
 //                     </div>
 //                 </div>

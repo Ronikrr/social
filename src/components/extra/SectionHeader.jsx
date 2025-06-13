@@ -14,7 +14,7 @@ const SectionHeader = ({
                     <div className="hidden md:block flex-grow h-[1px] bg-black mx-[10px]" />
 
                     {/* Center Text */}
-                    <p className="text-[20px] sm:text-[24px] poppins_thin text-[#ef4523] text-nowrap">
+                    <p className="text-[20px] sm:text-[24px] poppins_thin text-primary text-nowrap">
                         {subtitle}
                     </p>
 

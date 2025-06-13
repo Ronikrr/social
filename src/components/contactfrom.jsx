@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const intialState = {
     fullname: "",
@@ -26,17 +27,17 @@ const ContactForm = () => {
         <div className=" py-[50px] lg:py-[50px] poppins_thin" id="contact">
             <div className="container mx-auto lg:max-w-7xl">
                 <div className="flex flex-col w-full gap-3 lg:flex-row">
-                    <div className=" w-full  lg:w-4/12  bg-[#ef4523] rounded-tr-[100px] flex justify-center items-center ">
+                    <div className=" w-full  lg:w-4/12   border border-[5px] border-primary rounded-tr-[100px] flex justify-center items-center ">
                         <div className="w-full p-10">
-                            <h1 className="font-bold text-white text-[30px] text-left">
+                            <h1 className="font-bold  text-[30px] text-left">
                                 Get in touch
                             </h1>
-                            <p className="text-white" >
+                            <p className="flex flex-col text-primary" >
                                 Or just reach out manually to
 
-                                <a className="text-blue-200" href="">
+                                <Link className="text-black" href="">
                                     badebazarkadigital@gmail.com
-                                </a>
+                                </Link>
                             </p>
                         </div>
                     </div>
@@ -102,7 +103,7 @@ const ContactForm = () => {
                                 />
                             </div>
 
-                            <button type="submit" className="bg-[#ef4523] text-[#f7f7f7] border border-[#000000] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 cursor-pointer hover:border-b active:opacity-75 outline-none duration-300 group">
+                            <button type="submit" className="bg-primary text-[#f7f7f7] border border-[#000000] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 cursor-pointer hover:border-b active:opacity-75 outline-none duration-300 group">
                                 <span className="bg-[#000000] shadow-[#000000] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                                 Submit
                             </button>

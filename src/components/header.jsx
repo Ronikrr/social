@@ -61,8 +61,8 @@
 //                                     return (
 //                                         <li className="relative" key={id}>
 //                                             <Link className={`cursor-pointer 4xl:text-[20px]  xl:text-[17px] capitalize duration-1000 my-[5px] lg:mx-[5px] lg:p-[10px] xl:mx-[15px] font-medium xl:p-[15px] ${isActive
-//                                                 ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]'
-//                                                 : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'
+//                                                 ? 'text-primary border-b-[2px] border-primary'
+//                                                 : 'hover:text-primary hover:border-b-[2px] hover:border-primary'
 //                                                 }`}
 //                                                 onClick={scrollToTop}
 //                                                 to={link.path}>
@@ -102,7 +102,7 @@
 //                                         const isActive = location.pathname === link.path
 //                                         return (
 //                                             <li className='relative py-[7px]' key={id}>
-//                                                 <Link className={`text-[20px] capitalize   duration-1000 my-[5px] mx-[15px] font-medium p-[15px] ${isActive ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]' : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'} `} onClick={onclick} to={link.path}>
+//                                                 <Link className={`text-[20px] capitalize   duration-1000 my-[5px] mx-[15px] font-medium p-[15px] ${isActive ? 'text-primary border-b-[2px] border-primary' : 'hover:text-primary hover:border-b-[2px] hover:border-primary'} `} onClick={onclick} to={link.path}>
 //                                                     {link.labal}
 //                                                 </Link>
 //                                             </li>

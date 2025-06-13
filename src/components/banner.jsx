@@ -52,7 +52,7 @@
 
 //             <div className="container px-auto lg:px-0 z-20 relative 2xl:w-[1320px] mx-auto">
 //                 <h1 className='text-[50px] sm:text-[70px] lg:text-[100px] xl:text-[125px] 4xl:text-[180px] leading-none capitalize text-center'>
-//                     <span className='text-[#ef4523]'>delivers</span> results!
+//                     <span className='text-primary'>delivers</span> results!
 //                 </h1>
 //             </div>
 
@@ -124,7 +124,7 @@ const Banner = () => {
             </div>
             <div className="container px-auto lg:px-0 z-20 relative 2xl:w-[1320px] mx-auto">
                 <h1 className='text-[50px] sm:text-[70px] lg:text-[100px] xl:text-[125px] 4xl:text-[180px] leading-none capitalize text-center'>
-                    <span className='text-[#ef4523]'>delivers</span> results!
+                    <span className='text-primary'>delivers</span> results!
                 </h1>
             </div>
             <div className="absolute hidden xl:block xl:top-[429px] 2xl:top-[475px] w-[185px] h-[457px] right-[46px]">

@@ -68,15 +68,15 @@ const Footer = () => {
                         <div className="flex flex-col w-full lg:w-4/12">
                             <h4 className="mb-[20px] text-[15px] lg:text-[22px]">Subscribe to Our Newsletter</h4>
                             <form className="flex w-full items-center gap-3 mb-[20px] flex-row">
-                                <input type="text" className="px-4 py-2 rounded-xl border w-6/12 lg:w-7/12 border-[#ef4523] bg-[#f7f7f7]" />
-                                <button className="bg-[#ef4523] text-[#f7f7f7] border border-[#000000] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 cursor-pointer hover:border-b active:opacity-75 outline-none duration-300 group">
+                                <input type="text" className="px-4 py-2 rounded-xl border w-6/12 lg:w-7/12 border-primary bg-[#f7f7f7]" />
+                                <button className="bg-primary text-[#f7f7f7] border border-[#000000] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 cursor-pointer hover:border-b active:opacity-75 outline-none duration-300 group">
                                     <span className="bg-[#000000] shadow-[#000000] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                                     Subscribe
                                 </button>
                             </form>
                             <div className="flex items-center justify-center gap-4 lg:justify-normal">
                                 {socialLinks.map((item) => (
-                                    <Link key={item.id} to={item.path} target="_blank" className="cursor-pointer w-[40px] h-[40px] border-2 transition-all duration-1000 border-black flex items-center justify-center rounded-full hover:bg-[#ef4523]">
+                                    <Link key={item.id} to={item.path} target="_blank" className="cursor-pointer w-[40px] h-[40px] border-2 transition-all duration-1000 border-black flex items-center justify-center rounded-full hover:bg-primary">
                                         {item.icon}
                                     </Link>
                                 ))}

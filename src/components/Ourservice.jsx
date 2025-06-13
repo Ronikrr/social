@@ -81,8 +81,8 @@ const Ourservice = () => {
                                     key={tab.id}
                                     onClick={() => setActiveTab(tab.id)}
                                     className={`lg:w-full lg:py-3 px-7 lg:px-0 transition-all ease-in-out duration-300 ${activeTab === tab.id
-                                        ? 'border-2 border-[#ef4523] rounded-full text-[#ef4523] font-semibold'
-                                        : 'text-white bg-[#ef4523]  transition-all ease-in-out duration-300 border border-[#ef4523] rounded-full hover:text-[#ef4523] hover:bg-transparent cursor-pointer'
+                                        ? 'border-2 border-primary rounded-full text-primary font-semibold'
+                                        : 'text-white bg-primary  transition-all ease-in-out duration-300 border border-primary rounded-full hover:text-primary hover:bg-transparent cursor-pointer'
                                         }`}
                                 >
                                     {tab.label}
