@@ -9,7 +9,7 @@ const SectionHeader = ({
             <h1 className="text-[20px] sm:text-[35px] goblin_one_regular">{title}</h1>
 
             <div className="mx-auto w-full md:w-[600px] relative ">
-                <div className="flex items-center justify-center mx-auto w-full md:w-[600px] mb-[25px] ">
+                <div className="flex items-center justify-center mx-auto w-full md:w-[600px]  ">
                     {/* Left Line */}
                     <div className="hidden md:block flex-grow h-[1px] bg-black mx-[10px]" />
 

@@ -104,6 +104,7 @@ code {
   .instrument {
     font-family: "Instrument Sans", sans-serif;
   }
+/* Example CSS (you can convert to Tailwind classes) */
 
   /* Animations */
   .circle {
@@ -155,5 +156,6 @@ code {
   #root {
     @apply overflow-x-hidden md:overflow-x-visible;
   }
+  
 }
 /* Font Face */

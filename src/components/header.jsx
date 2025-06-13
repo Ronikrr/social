@@ -121,13 +121,14 @@
 // export default Header
 import React, { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link, useLocation } from 'react-router-dom';
+
 import Logo from '../assets/avif/logo.webp';
+import { Link } from 'react-scroll'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const location = useLocation();
+
 
     // Handle scrolling event
     useEffect(() => {
@@ -147,13 +148,13 @@ const Header = () => {
     };
 
     const links = [
-        { id: 1, label: "About Us", path: "/aboutpage" },
-        { id: 2, label: "Service", path: "/service" },
-        { id: 3, label: "Our Work", path: "/ourwork" },
-        { id: 4, label: "Awards", path: "/awards" },
-        { id: 5, label: "Clients", path: "/client" },
-        { id: 6, label: "Careers", path: "/careers" },
-        { id: 7, label: "Contact Us", path: "/contact" },
+        { id: 1, label: "About Us", path: "aboutpage" },
+        { id: 2, label: "Service", path: "service" },
+        { id: 3, label: "Our Work", path: "ourwork" },
+        // { id: 4, label: "Awards", path: "/awards" },
+        { id: 5, label: "Clients", path: "client" },
+        // { id: 6, label: "Careers", path: "/careers" },
+        { id: 7, label: "Contact Us", path: "contact" },
     ];
 
     return (
@@ -169,15 +170,16 @@ const Header = () => {
                     {/* Nav Links */}
                     <ul className="flex flex-row ml-auto mr-[3rem]">
                         {links.map(({ id, label, path }) => {
-                            const isActive = location.pathname === path;
+
                             return (
                                 <li key={id} className="relative">
                                     <Link
-                                        to={path}
-                                        className={`cursor-pointer 4xl:text-[20px] xl:text-[17px] capitalize duration-300 my-[5px] lg:mx-[5px] lg:p-[10px] xl:mx-[15px] font-medium xl:p-[15px] ${isActive
-                                            ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]'
-                                            : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'}
-                                        `}
+                                        to={path.replace('#', '')} // remove '#' because react-scroll expects the ID name
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true} // watches scroll position
+                                        offset={-80} // adjust if you have a sticky navbar
+                                        className={`cursor-pointer 4xl:text-[20px] xl:text-[17px] capitalize duration-300 my-[5px] lg:mx-[5px] lg:p-[10px] xl:mx-[15px] font-medium xl:p-[15px]`}
                                         onClick={handleMenuClick}
                                     >
                                         {label}
@@ -208,14 +210,12 @@ const Header = () => {
                     {isMenuOpen && (
                         <ul className="flex flex-col w-full text-center transition-all duration-300 ease-in-out opacity-100">
                             {links.map(({ id, label, path }) => {
-                                const isActive = location.pathname === path;
+
                                 return (
                                     <li key={id} className="relative py-[7px]">
                                         <Link
                                             to={path}
-                                            className={`text-[20px] capitalize duration-300 my-[5px] mx-[15px] font-medium p-[15px] ${isActive
-                                                ? 'text-[#ef4523] border-b-[2px] border-[#ef4523]'
-                                                : 'hover:text-[#ef4523] hover:border-b-[2px] hover:border-[#ef4523]'}
+                                            className={`text-[20px] capitalize duration-300 my-[5px] mx-[15px] font-medium p-[15px] 
                                             `}
                                             onClick={handleMenuClick}
                                         >

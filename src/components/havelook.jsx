@@ -101,8 +101,8 @@ const Havealook = () => {
     }, []);
 
     return (
-        <section className="relative w-full py-[40px] overflow-hidden bg-white">
-            <div className="container mx-auto mt-10">
+        <section className="relative w-full overflow-hidden bg-white" id="client">
+            <div className="container py-3 mx-auto">
 
                 <SectionHeader
                     title={"Have a Look"}

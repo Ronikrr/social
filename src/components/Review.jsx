@@ -35,7 +35,7 @@ const Review = () => {
         },
     ];
     return (
-        <div className='w-full h-full lg:h-[40rem] flex items-center justify-center relative ' >
+        <div className='relative flex items-center justify-center w-full h-full ' >
             <div
                 className={cn(
                     "absolute inset-0 lg:-rotate-3 lg:top-[5%]  h-full",
@@ -44,7 +44,7 @@ const Review = () => {
                     "dark:[background-image:linear-gradient(to_right,#26262620_1px,transparent_1px),linear-gradient(to_bottom,#26262620_1px,transparent_1px)]",
                 )}
             />
-            <div className="container mx-auto">
+            <div className="container py-[40px] mx-auto">
                 <SectionHeader
                     title="Rewiews"
                     subtitle="“Client Feedback & Testimonials”"

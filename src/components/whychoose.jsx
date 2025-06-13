@@ -41,7 +41,7 @@ const Whychoose = () => {
     ];
 
     return (
-        <section className="banner h-full 2xl:h-full relative py-[25px] lg:py-[40px] w-full">
+        <section className="banner h-full 2xl:h-full relative py-[25px] lg:py-[50px] w-full">
             {/* Background Image */}
             <div
                 className={cn(
@@ -51,7 +51,7 @@ const Whychoose = () => {
                     "dark:[background-image:linear-gradient(to_right,#26262620_1px,transparent_1px),linear-gradient(to_bottom,#26262620_1px,transparent_1px)]",
                 )}
             />
-            <div className="container py-[40px] mx-auto">
+            <div className="container mx-auto">
                 {/* Heading Section */}
 
                 <SectionHeader

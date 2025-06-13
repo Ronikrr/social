@@ -3,7 +3,7 @@ import React from 'react'
 const Aboutsectoion = () => {
     return (
         <section
-            className="banner relative pt-[50px] pb-[50px] md:pt-[150px] md:pb-[40px]   ">
+            className="banner relative pt-[50px] pb-[50px] md:pt-[150px] md:pb-[0px]   " id='aboutpage'>
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center text-center head">
                     <h1 className=' text-[20px] lg:text-[35px] goblin_one_regular' >About BBD (Who We Are)</h1>
