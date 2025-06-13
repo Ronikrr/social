@@ -101,7 +101,7 @@ const Havealook = () => {
     }, []);
 
     return (
-        <section className="relative w-full pt-0 pb-10 overflow-hidden bg-white">
+        <section className="relative w-full py-[40px] overflow-hidden bg-white">
             <div className="container mx-auto mt-10">
 
                 <SectionHeader

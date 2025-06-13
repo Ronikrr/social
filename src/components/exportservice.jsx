@@ -11,7 +11,7 @@ const Exportservice = () => {
     ]
 
     return (
-        <section className="banner relative  pt-[50px] pb-[50px] h-full lg:pt-[80px] lg:pb-[50px]  w-full ">
+        <section className="banner relative  py-[50px]  h-full  lg:py-[50px]  w-full ">
 
             <div
                 className={cn(
